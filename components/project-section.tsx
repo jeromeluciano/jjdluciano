@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import cyclickImg from "../public/images/projects/cyclick.png";
+import pollyImg from "../public/images/projects/polly.png";
 import ProjectItem from "./project/project-item";
 
 export default function ProjectSection() {
@@ -31,14 +32,14 @@ export default function ProjectSection() {
         <ProjectItem
           thumbnail={cyclickImg}
           title="CyClick"
-          link=""
+          link="https://github.com/jeromeluciano/CyClick-final"
           description="App that lets you record your travel"
         />
         <ProjectItem
-          thumbnail={cyclickImg}
-          title="CyClick"
-          link=""
-          description="App that lets you record your travel"
+          thumbnail={pollyImg}
+          title="Polly"
+          link="https://polly-one.vercel.app/"
+          description="App that lets you instantly create poll"
         />
       </SimpleGrid>
     </Stack>

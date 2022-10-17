@@ -7,17 +7,29 @@ export default function ProjectItem({ thumbnail, title, link, description }) {
   return (
     <GridItem>
       <Box w="100%">
-        <LinkBox cursor="pointer">
-          <Image src={thumbnail} alt={title} style={{ borderRadius: "15px" }} />
+        <LinkBox cursor="pointer" display={"flex"} flexDirection="column">
+          <a href={link}>
+            <Box flex={2}>
+              <Image
+                src={thumbnail}
+                alt={title}
+                style={{
+                  borderRadius: "15px",
+                  objectFit: "contain",
+                  maxHeight: "120px",
+                }}
+              />
+            </Box>
 
-          <Box textAlign="center">
-            <Text color={textColor} fontSize="smaller">
-              {title}
-            </Text>
-            <Text color={textColor} fontSize="x-small">
-              {description}
-            </Text>
-          </Box>
+            <Box textAlign="center">
+              <Text color={textColor} fontSize="smaller">
+                {title}
+              </Text>
+              <Text color={textColor} fontSize="x-small">
+                {description}
+              </Text>
+            </Box>
+          </a>
         </LinkBox>
       </Box>
     </GridItem>
