@@ -27,7 +27,7 @@ export default function ProjectSection() {
       >
         projects
       </Text>
-      <SimpleGrid columns={[1, 2, 2]} minHeight={120} gap={8}>
+      <SimpleGrid columns={[1, 1, 2, 2]} minHeight={120} gap={8}>
         <ProjectItem
           thumbnail={cyclickImg}
           title="CyClick"
