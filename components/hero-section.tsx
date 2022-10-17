@@ -12,10 +12,10 @@ export default function HeroSection() {
   return (
     <Flex mt="8" justifyContent="space-between" gridGap="8">
       <Stack flex="2" letterSpacing="2" justifyContent="center">
-        <Text fontSize={{ sm: "2xl", md: "xl" }} color={textColor}>
+        <Text fontSize={{ sm: "lg", md: "xl" }} color={textColor}>
           👋 Hello there!
         </Text>
-        <Text fontSize={{ sm: "2xl", md: "xl" }}>
+        <Text fontSize={{ sm: "xl", md: "xl" }}>
           I&apos;m{" "}
           <Text as="span" color={primaryColor} fontWeight="bold">
             John Jerome D. Luciano
