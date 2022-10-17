@@ -1,8 +1,7 @@
-import { Box, Text } from "@chakra-ui/react";
-import useTextColor from "../hooks/useTextColor";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function FooterSection() {
-  const textColor = useTextColor();
+  const textColor = useColorModeValue("gray.600", "gray.400");
   return (
     <Box as="footer" py="6">
       <Text textAlign="center" color={textColor} fontSize="xs">
