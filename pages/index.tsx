@@ -10,13 +10,18 @@ import SkillSection from "../components/skill-section";
 
 export default function Home() {
   return (
-    <Layout>
-      <DynamicHeroSection />
-      {/* About */}
-      <AboutSection />
-      <SkillSection />
-      <ProjectSection />
-      {/* end about */}
-    </Layout>
+    <>
+      <Head>
+        <title>John Jerome Luciano</title>
+      </Head>
+      <Layout>
+        <DynamicHeroSection />
+        {/* About */}
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        {/* end about */}
+      </Layout>
+    </>
   );
 }
