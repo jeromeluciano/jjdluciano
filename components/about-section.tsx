@@ -20,9 +20,11 @@ export default function AboutSection() {
       <Text
         fontSize="sm"
         color={textColor}
-        lineHeight="7"
+        lineHeight="8"
         textAlign="justify"
-        style={{ textIndent: "3.5rem" }}
+        px="2"
+
+        // style={{ textIndent: "25px" }}
       >
         {/* // eslint-disable-next-line react/no-unescaped-entities */}I
         recently received my Bachelor&apos;s Degree in Information Technology at
