@@ -16,7 +16,7 @@ export default function HeroSection() {
           👋 Hello there!
         </Text>
         <Text fontSize={{ sm: "2xl", md: "xl" }}>
-          I'm{" "}
+          I&apos;m{" "}
           <Text as="span" color={primaryColor} fontWeight="bold">
             John Jerome D. Luciano
           </Text>

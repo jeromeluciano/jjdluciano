@@ -24,7 +24,8 @@ export default function AboutSection() {
         textAlign="justify"
         style={{ textIndent: "3.5rem" }}
       >
-        I recently received my Bachelor's Degree in Information Technology at
+        {/* // eslint-disable-next-line react/no-unescaped-entities */}I
+        recently received my Bachelor&apos;s Degree in Information Technology at
         City of Malabon University. During my academic years I enjoyed learning
         web technologies, from Frontend to backend. I learned the basics of
         HTML, CSS, JavaScript during my first year and backend programming
