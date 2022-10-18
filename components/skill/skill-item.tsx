@@ -27,8 +27,8 @@ export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
       >
         <Icon as={icon} {...pageProps} name="css" display={{ md: "block" }} />
         <Text
-          fontSize={{ sm: "sm", md: "initial" }}
-          fontWeight="medium"
+          fontSize="xs"
+          fontWeight="bold"
           letterSpacing="wider"
           color={textColor}
         >
