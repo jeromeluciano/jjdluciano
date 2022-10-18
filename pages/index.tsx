@@ -21,8 +21,8 @@ export default function Home() {
         <meta property="og:description" content="My portfolio website" />
         <meta property="og:updated_time" content="1666077081" />
         <meta
-          property="og:image:secure"
-          content="https://www.jjdluciano.com/images/opengraph.png"
+          property="og:image"
+          content="https://www.jjdluciano.com/images/opengraph1.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
