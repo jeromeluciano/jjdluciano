@@ -28,7 +28,7 @@ export default function FooterSection() {
             <FaGithub size={24} color={iconColor} />
           </Box>
         </a>
-        <a href="https://msng.link/o/?09156969987=vi">
+        <a href="https://msng.link/o/?639156969987=vi">
           <Box>
             <FaViber size={24} color={iconColor} />
           </Box>
