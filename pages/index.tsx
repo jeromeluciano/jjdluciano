@@ -12,7 +12,26 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>John Jerome Luciano</title>
+        <title>John Jerome D. Luciano</title>
+        <meta name="description" content="My portfolio website" />
+        <meta property="og:url" content="https://www.jjdluciano.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="John Jerome D. Luciano" />
+        <meta property="og:description" content="My portfolio website" />
+        <meta
+          property="og:image"
+          content="https://www.jjdluciano.com/images/opengraph.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="jjdluciano.com" />
+        <meta property="twitter:url" content="https://www.jjdluciano.com/" />
+        <meta name="twitter:title" content="John Jerome D. Luciano" />
+        <meta name="twitter:description" content="My portfolio website" />
+        <meta
+          name="twitter:image"
+          content="https://www.jjdluciano.com/images/opengraph.png"
+        />
       </Head>
       <Layout>
         <DynamicHeroSection />
