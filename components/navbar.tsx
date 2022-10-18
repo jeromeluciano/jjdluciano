@@ -74,10 +74,34 @@ export default function Navbar() {
                   aria-label="dropdown button for mobile"
                 ></MenuButton>
                 <MenuList bg={bgColor}>
-                  <MenuItem>home</MenuItem>
-                  <MenuItem>about</MenuItem>
-                  <MenuItem>skills</MenuItem>
-                  <MenuItem>resume</MenuItem>
+                  <Link href="#home">
+                    <MenuItem>
+                      <LinkBox letterSpacing="wider" cursor="pointer">
+                        home
+                      </LinkBox>
+                    </MenuItem>
+                  </Link>
+                  <Link href="#about">
+                    <MenuItem>
+                      <LinkBox letterSpacing="wider" cursor="pointer">
+                        about
+                      </LinkBox>
+                    </MenuItem>
+                  </Link>
+                  <Link href="#skills">
+                    <MenuItem>
+                      <LinkBox letterSpacing="wider" cursor="pointer">
+                        skills
+                      </LinkBox>
+                    </MenuItem>
+                  </Link>
+                  <a href="jjdluciano-resume.pdf">
+                    <MenuItem>
+                      <LinkBox letterSpacing="wider" cursor="pointer">
+                        resume
+                      </LinkBox>
+                    </MenuItem>
+                  </a>
                 </MenuList>
               </Menu>
             </Box>
