@@ -19,6 +19,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="John Jerome D. Luciano" />
         <meta property="og:description" content="My portfolio website" />
+        <meta property="og:updated_time" content="1666077081" />
         <meta
           property="og:image"
           content="https://www.jjdluciano.com/images/opengraph.png"
