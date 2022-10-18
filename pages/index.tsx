@@ -14,7 +14,10 @@ export default function Home() {
       <Head>
         <title>John Jerome D. Luciano</title>
         <meta name="description" content="My portfolio website" />
-
+        <meta
+          name="keywords"
+          content="john jerome luciano, jerome luciano, luciano jerome, web developer, portfolio"
+        />
         <meta property="og:url" content="https://www.jjdluciano.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="John Jerome D. Luciano" />

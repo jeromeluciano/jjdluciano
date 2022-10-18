@@ -5,15 +5,6 @@ import useTextColor from "../../hooks/useTextColor";
 export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
   const textColor = useTextColor();
 
-  const popup = {
-    hidden: {
-      y: "20px",
-    },
-    visible: {
-      y: "0",
-    },
-  };
-
   return (
     <motion.div
       initial={{ y: 10, opacity: 0 }}

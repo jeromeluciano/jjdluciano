@@ -71,6 +71,7 @@ export default function Navbar() {
                 <MenuButton
                   as={IconButton}
                   icon={<HamburgerIcon />}
+                  aria-label="dropdown button for mobile"
                 ></MenuButton>
                 <MenuList bg={bgColor}>
                   <MenuItem>home</MenuItem>
