@@ -1,5 +1,5 @@
 import { Box, Stack, Text, useColorModeValue } from "@chakra-ui/react";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub, FaViber } from "react-icons/fa";
 
 export default function FooterSection() {
   const textColor = useColorModeValue("gray.600", "gray.400");
@@ -26,6 +26,11 @@ export default function FooterSection() {
         <a href="https://www.linkedin.com/in/john-jerome-luciano-a65490233/">
           <Box>
             <FaGithub size={24} color={iconColor} />
+          </Box>
+        </a>
+        <a href="https://msng.link/o/?09156969987=vi">
+          <Box>
+            <FaViber size={24} color={iconColor} />
           </Box>
         </a>
       </Stack>
