@@ -40,7 +40,7 @@ export default function ProjectSection() {
           <ProjectItem
             thumbnail={pollyImg}
             title="Polly"
-            link="https://polly-one.vercel.app/"
+            link="https://polly.jjdluciano.com/"
             description="App that lets you instantly create poll"
           />
         </SimpleGrid>
