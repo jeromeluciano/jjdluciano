@@ -1,4 +1,5 @@
 import { Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { RoughNotation } from "react-rough-notation";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import useTextColor from "../hooks/useTextColor";
 import Section from "./section";
@@ -22,21 +23,15 @@ export default function AboutSection() {
         <Text
           fontSize="sm"
           color={textColor}
-          lineHeight="8"
+          lineHeight="10"
           textAlign="justify"
-          px="2"
+          px="4"
           style={{ textIndent: "25px" }}
         >
-          I&apos;m a recent information technology graduate who enjoys
-          experimenting with web technologies. I enjoy building things with
-          React and have a strong interest in learning new technologies in the
-          Web development ecosystem. I&apos;m currently looking for an
-          opportunity that will allow me to use my skills.
-          {/* I&apos;m an Information Technology Graduate who loves to explore and
-        tinker with web technologies. I enjoy building things with React and I
-        have a huge passion when it comes to learning new technologies in Web
-        development ecosystem. I&apos;m currently looking for a job that will
-        allow me to put my skills to good use. */}
+          I&apos;m John Jerome a fresh graduate who enjoys experimenting with
+          new latest web technologies. I enjoy building and learning with react
+          and other new stacks. I&apos;m currently looking for full-time work as
+          a junior front-end or back-end developer.
         </Text>
       </Stack>
     </Section>
