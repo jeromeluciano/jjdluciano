@@ -23,7 +23,7 @@ export default function AboutSection() {
           fontSize="sm"
           color={textColor}
           lineHeight="8"
-          textAlign="left"
+          textAlign="justify"
           px="2"
           style={{ textIndent: "25px" }}
         >
