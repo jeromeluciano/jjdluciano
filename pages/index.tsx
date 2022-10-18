@@ -21,7 +21,7 @@ export default function Home() {
         <meta property="og:description" content="My portfolio website" />
         <meta property="og:updated_time" content="1666077081" />
         <meta
-          property="og:image"
+          property="og:image:secure"
           content="https://www.jjdluciano.com/images/opengraph.png"
         />
 
