@@ -1,5 +1,4 @@
 import { Stack, Text, useColorModeValue } from "@chakra-ui/react";
-import { RoughNotation } from "react-rough-notation";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import useTextColor from "../hooks/useTextColor";
 import Section from "./section";
