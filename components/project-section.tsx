@@ -18,7 +18,7 @@ import Section from "./section";
 export default function ProjectSection() {
   const primaryColor = usePrimaryColor();
   return (
-    <Section delay={1.2}>
+    <Section delay={1.5}>
       <Stack my="8" spacing={8}>
         <Text
           fontWeight="bold"

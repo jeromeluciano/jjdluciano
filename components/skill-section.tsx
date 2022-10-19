@@ -20,7 +20,7 @@ export default function SkillSection() {
   const textColor = useTextColor();
   const primaryColor = usePrimaryColor();
   return (
-    <Section delay={0.9}>
+    <Section delay={1.2}>
       <Stack mt="10" spacing={8} id="skills">
         <Text
           fontWeight="bold"

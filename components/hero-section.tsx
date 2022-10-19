@@ -11,7 +11,7 @@ export default function HeroSection() {
   const textColor = useTextColor();
 
   return (
-    <Section delay={0.3}>
+    <Section delay={0.6}>
       <Flex mt="8" justifyContent="space-between" gridGap="8">
         <Stack flex="2" letterSpacing="2" justifyContent="center">
           <Text fontSize={{ sm: "lg", md: "xl" }} color={textColor}>

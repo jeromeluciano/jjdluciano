@@ -7,7 +7,7 @@ export default function AboutSection() {
   const primaryColor = usePrimaryColor();
   const textColor = useTextColor();
   return (
-    <Section delay={0.6}>
+    <Section delay={0.9}>
       <Stack mt="8" spacing={4} id="about">
         <Text
           fontWeight="bold"
