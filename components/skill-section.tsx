@@ -12,6 +12,7 @@ import {
   MySQLIcon,
   ExpressIcon,
   TRPCIcon,
+  LaravelIcon,
 } from "./icons-svg/custom-icons";
 import Section from "./section";
 import SkillItem from "./skill/skill-item";
@@ -93,8 +94,8 @@ export default function SkillSection() {
               delay={0.8}
             />
             <SkillItem
-              icon={TRPCIcon}
-              itemText="trpc.io"
+              icon={LaravelIcon}
+              itemText="Laravel"
               w="8"
               h="8"
               delay={0.9}
