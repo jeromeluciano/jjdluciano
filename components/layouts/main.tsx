@@ -5,21 +5,21 @@ import Navbar from "../navbar";
 
 
 export default function Layout({ children }) {
-  const theme = useColorModeValue("no-dots", "with-dots");
+  const theme = useColorModeValue("light-dots", "dark-dots");
+  const bgColor = useColorModeValue("rgb(244 244 245)", "rgb(39 39 42)");
 
   useEffect(() => {
-    if (theme == "with-dots") {
-      console.log(theme);
-      document.body.style.backgroundImage = "radial-gradient(#4b5563 1px, transparent 1px)";
+    if (theme == "dark-dots") {
+      document.body.style.backgroundImage = "radial-gradient(#4b5563 .6px, transparent 1px)";
       document.body.style.backgroundSize = "60px 60px";
     } else {
-      document.body.style.backgroundImage = "";
-      document.body.style.backgroundSize = "";
+      document.body.style.backgroundImage = "radial-gradient(#A1A1AA 1px, transparent 1px)";
+      document.body.style.backgroundSize = "60px 60px";
     }
   }, [theme]);
 
   return (
-    <Container >
+    <Container bgColor={bgColor}>
       <Navbar />
       <Box mx={{ sm: "4" }}>{children}</Box>
       <FooterSection />

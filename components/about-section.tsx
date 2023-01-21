@@ -27,10 +27,7 @@ export default function AboutSection() {
           px="4"
           style={{ textIndent: "25px" }}
         >
-          I&apos;m John Jerome a fresh graduate who enjoys experimenting with
-          new latest web technologies. I enjoy building and learning with react
-          and other new stacks. I&apos;m currently looking for full-time work as
-          a junior front-end or back-end developer.
+          I am a problem solver at heart, with a strong desire to simplify complex issues and devise elegant solutions. I am also a skilled coder with a passion for programming logic and structure. I am passionate about writing efficient and beautiful code, both frontend and backend.
         </Text>
       </Stack>
     </Section>

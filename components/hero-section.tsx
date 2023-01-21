@@ -31,7 +31,7 @@ export default function HeroSection() {
           >
             I love tinkering with{" "}
             <Text as="span" color={primaryColor}>
-              web technologies
+              technologies
             </Text>
             .
           </Text>
@@ -43,7 +43,7 @@ export default function HeroSection() {
             width={15}
             height="full"
             rounded="md"
-            src={require("../public/images/me.jpg")}
+            src={require("../public/images/me2.jpg")}
           />
         </Box>
       </Flex>

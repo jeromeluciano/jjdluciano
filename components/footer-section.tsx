@@ -37,8 +37,7 @@ export default function FooterSection() {
           </a>
         </Stack>
         <Text textAlign="center" color={textColor} fontSize="xs">
-          &copy; {new Date().getFullYear()} John Jerome D. Luciano | Made with
-          💜
+          &copy; {new Date().getFullYear()} John Jerome D. Luciano
         </Text>
       </Box>
     </Section>
