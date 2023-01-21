@@ -1,6 +1,6 @@
 import { useColorModeValue } from "@chakra-ui/react";
 
 export default () => {
-  const textColor = useColorModeValue("gray.900", "gray.200");
+  const textColor = useColorModeValue("gray.600", "gray.200");
   return textColor;
 };

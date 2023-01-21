@@ -24,7 +24,7 @@ export const theme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("rgb(244 244 245)", "rgb(39 39 42)")(props),
+        bg: mode("blue.50", "rgb(39 39 42)")(props),
       },
     }),
   },
