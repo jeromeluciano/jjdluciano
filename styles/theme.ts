@@ -17,14 +17,14 @@ const breakpoints = {
 export const theme = extendTheme({
   config,
   fonts: {
-    heading: `'JetBrains Mono', monospace`,
-    body: `'JetBrains Mono', monospace`,
+    heading: `'Roboto Mono', monospace`,
+    body: `'Roboto Mono', monospace`,
   },
   breakpoints,
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("purple.50", "gray.800")(props),
+        bg: mode("rgb(244 244 245)", "rgb(39 39 42)")(props),
       },
     }),
   },
