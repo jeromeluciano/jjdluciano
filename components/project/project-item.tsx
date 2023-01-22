@@ -5,7 +5,7 @@ import useTextColor from "../../hooks/useTextColor";
 export default function ProjectItem({ thumbnail, title, link, description }) {
   const textColor = useTextColor();
   return (
-    <GridItem>
+    <GridItem _hover={{ transform: "scale(1.1)", transition: "0.2s" }}>
       <Box w="100%">
         <LinkBox cursor="pointer" display={"flex"} flexDirection="column">
           <a href={link}>

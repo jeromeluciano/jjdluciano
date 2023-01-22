@@ -15,6 +15,7 @@ export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
         direction={{ sm: "column", md: "row" }}
         alignItems="center"
         spacing={4}
+        _hover={{ transform: "scale(1.1)" }}
       >
         <Icon as={icon} {...pageProps} name="css" display={{ md: "block" }} />
         <Text

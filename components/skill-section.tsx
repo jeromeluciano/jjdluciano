@@ -1,4 +1,4 @@
-import { Box, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Grid, Icon, Stack, Text } from "@chakra-ui/react";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import useTextColor from "../hooks/useTextColor";
 import {
@@ -33,75 +33,74 @@ export default function SkillSection() {
         >
           skills & technologies I used
         </Text>
-        <Stack
-          direction="row"
-          spacing={{ sm: "6", md: "8" }}
-          justifyContent="space-around"
+        <Grid
+          templateRows="repeat(3, 1fr)"
+          templateColumns="repeat(3, 1fr)"
+          gap={10}
         >
-          <Stack spacing={{ sm: "8", md: "8" }}>
-            <SkillItem
-              icon={HTMLIcon}
-              itemText="HTML5"
-              w="8"
-              h="8"
-              delay={0.1}
-            />
-            <SkillItem icon={CSSIcon} itemText="CSS3" w="8" h="8" delay={0.2} />
-            <SkillItem
-              icon={JSIcon}
-              itemText="JavaScript"
-              w="8"
-              h="8"
-              delay={0.3}
-            />
-          </Stack>
-          <Stack spacing={{ sm: "8", md: "8" }}>
-            <SkillItem
-              icon={ReactIcon}
-              itemText="React.js"
-              w="8"
-              h="8"
-              delay={0.4}
-            />
-            <SkillItem
-              icon={NextIcon}
-              itemText="Next.js"
-              w="8"
-              h="8"
-              delay={0.5}
-            />
-            <SkillItem
-              icon={TSIcon}
-              itemText="TypeScript"
-              w="8"
-              h="8"
-              delay={0.6}
-            />
-          </Stack>
-          <Stack spacing={{ sm: "8", md: "8" }}>
-            <SkillItem
-              icon={PrismaIcon}
-              itemText="Prisma"
-              w="8"
-              h="8"
-              delay={0.7}
-            />
-            <SkillItem
-              icon={MySQLIcon}
-              itemText="MySQL"
-              w="8"
-              h="8"
-              delay={0.8}
-            />
-            <SkillItem
-              icon={LaravelIcon}
-              itemText="Laravel"
-              w="8"
-              h="8"
-              delay={0.9}
-            />
-          </Stack>
-        </Stack>
+
+          <SkillItem
+            icon={HTMLIcon}
+            itemText="HTML5"
+            w="8"
+            h="8"
+            delay={0.1}
+          />
+          <SkillItem icon={CSSIcon} itemText="CSS3" w="8" h="8" delay={0.2} />
+          <SkillItem
+            icon={JSIcon}
+            itemText="JavaScript"
+            w="8"
+            h="8"
+            delay={0.3}
+          />
+
+          <SkillItem
+            icon={ReactIcon}
+            itemText="React.js"
+            w="8"
+            h="8"
+            delay={0.4}
+          />
+          <SkillItem
+            icon={NextIcon}
+            itemText="Next.js"
+            w="8"
+            h="8"
+            delay={0.5}
+          />
+          <SkillItem
+            icon={TSIcon}
+            itemText="TypeScript"
+            w="8"
+            h="8"
+            delay={0.6}
+          />
+
+
+          <SkillItem
+            icon={PrismaIcon}
+            itemText="Prisma"
+            w="8"
+            h="8"
+            delay={0.7}
+          />
+          <SkillItem
+            icon={MySQLIcon}
+            itemText="MySQL"
+            w="8"
+            h="8"
+            delay={0.8}
+          />
+          <SkillItem
+            icon={LaravelIcon}
+            itemText="Laravel"
+            w="8"
+            h="8"
+            delay={0.9}
+          />
+
+        </Grid>
       </Stack>
     </Section>
   );
