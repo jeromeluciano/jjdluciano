@@ -12,6 +12,7 @@ import Image from "next/image";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import cyclickImg from "../public/images/projects/cyclick.png";
 import pollyImg from "../public/images/projects/polly.png";
+import netflixImg from "../public/images/projects/netflix.jpg";
 import ProjectItem from "./project/project-item";
 import Section from "./section";
 
@@ -42,6 +43,12 @@ export default function ProjectSection() {
             title="Polly"
             link="https://polly.jjdluciano.com/"
             description="App that lets you instantly create poll"
+          />
+          <ProjectItem
+            thumbnail={netflixImg}
+            title="Netflix Clone"
+            link="https://netflix-clone-nine-tau.vercel.app/"
+            description="A clone of Netflix with NextJS + TailwindCSS"
           />
         </SimpleGrid>
       </Stack>
