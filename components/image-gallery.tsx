@@ -13,6 +13,7 @@ export default function ImageGallery({ images }) {
   return (
     <LinkBox cursor="pointer">
       <Carousel onClickItem={(index, item) => {
+        // @ts-ignore
           setImage(item.props.children.props.src);
           onOpen()
       }}>
