@@ -20,10 +20,10 @@ export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
         spacing={4}
         _hover={{ transform: "scale(1.1)" }}
         backgroundColor={bgColor}
-        borderColor=""
+        // borderColor=""
         py={4}
         px={3}
-        borderWidth="1px"
+        // borderWidth="1px"
         rounded="lg"
       >
         <Icon as={icon} {...pageProps} name="css" display={{ md: "block" }} />
