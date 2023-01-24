@@ -17,7 +17,6 @@
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/mdx": "^13.1.4",
-    "chakra-ui-carousel": "^1.0.6",
     "framer-motion": "^7.5.2",
     "gray-matter": "^4.0.3",
     "next": "12.3.1",
