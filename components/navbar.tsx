@@ -3,12 +3,14 @@ import {
   Box,
   Button,
   Flex,
+  Hide,
   IconButton,
   LinkBox,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
+  Show,
   Stack,
   Text,
   useColorMode,
@@ -32,6 +34,13 @@ export default function Navbar() {
                 <Text fontWeight="bold" fontSize="xl" color={primaryColor}>
                   jjdl
                 </Text>
+              </Link>
+            </LinkBox>
+          </Box>
+          <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
+            <LinkBox cursor="pointer">
+              <Link href="/jjdluciano-resume.pdf">
+                <Text fontSize="xl">resume</Text>
               </Link>
             </LinkBox>
           </Box>
@@ -59,28 +68,28 @@ export default function Navbar() {
                     aria-label="dropdown button for mobile"
                   ></MenuButton>
                   <MenuList bg={bgColor}>
-                    <Link href="#home">
+                    <Link href="/">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
                           home
                         </LinkBox>
                       </MenuItem>
                     </Link>
-                    <Link href="#about">
+                    <Link href="/#about">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
                           about
                         </LinkBox>
                       </MenuItem>
                     </Link>
-                    <Link href="#skills">
+                    <Link href="/#skills">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
                           skills
                         </LinkBox>
                       </MenuItem>
                     </Link>
-                    <a href="jjdluciano-resume.pdf">
+                    <a href="/jjdluciano-resume.pdf">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
                           resume

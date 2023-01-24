@@ -13,12 +13,16 @@ import Layout from "./main";
 import netflixImg from "../../public/images/netflix/login.png";
 import Section from "../section";
 import useModalImage from "../../hooks/useModalImage";
+import Head from 'next/head'
 
 export default function ProjectLayout({ children, meta }) {
   
   const { image, isOpen, onClose } = useModalImage();
   return (
     <>
+      <Head>
+        <title>{meta.title}</title>
+      </Head>
       <Modal
         isOpen={isOpen}
         onClose={onClose}
@@ -45,7 +49,7 @@ export default function ProjectLayout({ children, meta }) {
         <Section delay={0.6}>
           <VStack spacing={8} mt="4" alignItems="left">
             <Title title={meta.title} link={meta.link} />
-            <Box>{children}</Box>
+            <Box pb="8">{children}</Box>
           </VStack>
         </Section>
       </Layout>

@@ -38,18 +38,18 @@ export default function AboutSection() {
           style={{ textIndent: "25px" }}
         >
           I am a problem solver at heart, with a strong desire to simplify
-          complex issues and devise elegant solutions. I am also a skilled web developer
-          with a passion for programming logic and structure. I am passionate
-          about web development, both frontend and backend.
+          complex issues and devise elegant solutions. I am also a skilled web
+          developer with a passion for programming logic and structure. I am
+          passionate about web development, both frontend and backend. 
         </Text>
-        <Center mt="2">
+        {/* <Center mt="2">
           <AnimatedButton
             title="Download my resume"
             handler={downloadResume}
             rightIcon={<ArrowLeftIcon fontSize="xs" />}
             leftIcon={<ArrowRightIcon fontSize="xs" />}
           />
-        </Center>
+        </Center> */}
       </Stack>
     </Section>
   );

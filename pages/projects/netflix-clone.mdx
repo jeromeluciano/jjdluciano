@@ -4,6 +4,7 @@ import homeImg from "../../public/images/netflix/home.png";
 import trailerImg from "../../public/images/netflix/trailer.png";
 import loginImg from "../../public/images/netflix/login.png";
 import { LinkIcon } from '@chakra-ui/icons'
+import { Flex } from '@chakra-ui/react'
 
 export const meta = {
     title: "Netflix Clone with TailwindCSS & Firebase Authentication",
@@ -11,8 +12,12 @@ export const meta = {
 }
 
 <ImageGallery images={[homeImg, trailerImg, loginImg]} />
-[Go to website](https://netflix-clone-nine-tau.vercel.app/login)  
+
+[Go to website](https://netflix-clone-nine-tau.vercel.app/login)
+[Source code](https://github.com/jeromeluciano/netflix-clone)
+
 <br/>
+
 This project is a reimplementation of the Netflix website, built using Next.js, Firebase, and TailwindCSS. It utilizes The MovieDB API to search for movies and display their details.
 <br/>
 
@@ -31,5 +36,7 @@ This project is a reimplementation of the Netflix website, built using Next.js, 
     - TailwindCSS
     - RecoilJS
     - React Player
+
+
 
 export default ({ children }) => <ProjectLayout meta={meta}>{children}</ProjectLayout>
