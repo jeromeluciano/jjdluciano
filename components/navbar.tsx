@@ -27,9 +27,13 @@ export default function Navbar() {
       <Box py="4" mx={{ sm: "4" }}>
         <Flex gridGap={8} alignItems="center">
           <Box flex={{ sm: "1", md: 0 }}>
-            <Text fontWeight="bold" fontSize="xl" color={primaryColor}>
-              jjdl
-            </Text>
+            <LinkBox cursor="pointer">
+              <Link href="/">
+                <Text fontWeight="bold" fontSize="xl" color={primaryColor}>
+                  jjdl
+                </Text>
+              </Link>
+            </LinkBox>
           </Box>
           <Stack
             direction="row"
@@ -44,9 +48,7 @@ export default function Navbar() {
               spacing="8"
               flex={{ sm: "1", md: 0 }}
               display={{ sm: "none", md: "flex" }}
-            >
-
-            </Stack>
+            ></Stack>
             <Stack direction={{ sm: "row" }}>
               <ToggleThemeButton bg={primaryColor} />
               <Box display={{ sm: "inline-block", md: "none" }}>

@@ -15,6 +15,7 @@ import {
   LaravelIcon,
 } from "./icons-svg/custom-icons";
 import Section from "./section";
+import SectionTitle from "./section-title";
 import SkillItem from "./skill/skill-item";
 
 export default function SkillSection() {
@@ -23,16 +24,7 @@ export default function SkillSection() {
   return (
     <Section delay={1.2}>
       <Stack mt="10" spacing={8} id="skills">
-        <Text
-          fontWeight="bold"
-          textDecoration="underline"
-          textUnderlineOffset="5px"
-          // @ts-ignore
-          textDecorationThickness={2}
-          color={primaryColor}
-        >
-          skills & technologies I used
-        </Text>
+        <SectionTitle title="technologies I used" />
         <Grid
           templateRows="repeat(3, 1fr)"
           templateColumns="repeat(3, 1fr)"

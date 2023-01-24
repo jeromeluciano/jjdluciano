@@ -17,8 +17,8 @@ const breakpoints = {
 export const theme = extendTheme({
   config,
   fonts: {
-    heading: `'Roboto Mono', monospace`,
-    body: `'Roboto Mono', monospace`,
+    heading: `'Satoshi Variable', sans-serif`,
+    body: `'Satoshi Variable', sans-serif`,
   },
   breakpoints,
   styles: {

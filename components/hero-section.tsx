@@ -17,14 +17,14 @@ export default function HeroSection() {
           <Text fontSize={{ sm: "lg", md: "xl" }} color={textColor} textAlign={{ sm: "center", md: "justify" }}>
             👋 Hello there!
           </Text>
-          <Text fontSize={{ sm: "xl", md: "lg" }} textAlign={{ sm: "center", md: "justify" }}>
+          <Text fontSize={{ sm: "xl", md: "xl" }} textAlign={{ sm: "center", md: "justify" }}>
             I&apos;m{" "}
             <Text as="span" color={primaryColor} fontWeight="bold">
               John Jerome D. Luciano
             </Text>
           </Text>
           <Text
-            fontSize={{ sm: "small", md: "xs" }}
+            fontSize={{ sm: "sm", md: "sm" }}
             color={textColor}
             textAlign={{ sm: "center", md: "justify" }}
             lineHeight="6"

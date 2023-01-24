@@ -22,10 +22,10 @@ export default function ProjectItem({ thumbnail, title, link, description }) {
             </Box>
 
             <Box textAlign="center">
-              <Text color={textColor} fontSize="smaller">
+              <Text color={textColor} fontSize="sm">
                 {title}
               </Text>
-              <Text color={textColor} fontSize="x-small">
+              <Text color={textColor} fontSize="xs">
                 {description}
               </Text>
             </Box>

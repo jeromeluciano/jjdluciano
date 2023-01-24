@@ -1,0 +1,50 @@
+import ProjectLayout from "../../components/layouts/project-layout";
+import ImageGallery from "../../components/image-gallery";
+
+import signinImg from "../../public/images/polly/signin.png";
+import mainImg from "../../public/images/polly/main.png";
+import createPollImg from "../../public/images/polly/create-a-poll.png";
+import createdImg from "../../public/images/polly/created.png";
+import votingPageImg from "../../public/images/polly/voting-page.png";
+import votedImg from "../../public/images/polly/voted.png";
+
+export const meta = {
+  title: "📊 Polly: Instantly create a poll",
+  link: "/projects/polly"
+};
+
+<ImageGallery
+  images={[
+    signinImg,
+    mainImg,
+    createPollImg,
+    createdImg,
+    votingPageImg,
+    votedImg,
+  ]}
+/>
+
+[Go to website](https://polly.jjdluciano.com)  
+<br/>
+Polly is a web app that allows user to create a poll
+
+<br />
+
+## Main Features
+    - Signin with Google Account
+    - Create a poll
+    - Share a poll link
+    - Visualize Poll Result 
+    - Mobile Responsive
+
+<br />
+
+## Tools
+    - [create-t3-app](https://create.t3.gg/)
+    - [Next.js](https://nextjs.org/)
+    - [trpc.io](https://trpc.io/)
+    - [TailwindCSS](https://tailwindcss.com/)
+    - [NextAuth.js](https://next-auth.js.org/)
+    - [PlanetScale (Data Storage)](https://planetscale.com/)
+
+export default ({ children }) => <ProjectLayout meta={meta}>{children}</ProjectLayout>

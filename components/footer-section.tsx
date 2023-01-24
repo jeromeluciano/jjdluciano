@@ -1,13 +1,26 @@
 import { Box, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { useRouter } from "next/router";
+import { useEffect, useMemo, useState } from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaViber } from "react-icons/fa";
 import Section from "./section";
 
 export default function FooterSection() {
   const textColor = useColorModeValue("gray.600", "gray.400");
   const iconColor = useColorModeValue("#6d6f7a", "#bbc4cf");
+
+  const router = useRouter();
+  const delay = useMemo(() => {
+    if(router.pathname.split('/')[1]) {
+      return 0.9;
+    } else {
+      return 1.8;
+    }
+  }, [router]) 
+  
+
   return (
-    <Section delay={1.8}>
-      <Box as="footer" pt="6" pb="3" mx="auto">
+    <Section delay={delay}>
+      <Box as="footer" pt="6" pb="3" mx="auto" my="auto">
         <Stack
           direction="row"
           justifyContent="center"

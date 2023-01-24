@@ -14,11 +14,17 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@fontsource/jetbrains-mono": "^4.5.11",
+    "@mdx-js/loader": "^2.2.1",
+    "@mdx-js/react": "^2.2.1",
+    "@next/mdx": "^13.1.4",
+    "chakra-ui-carousel": "^1.0.6",
     "framer-motion": "^7.5.2",
+    "gray-matter": "^4.0.3",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
+    "react-responsive-carousel": "^3.2.23",
     "typescript": "^4.8.4"
   },
   "devDependencies": {

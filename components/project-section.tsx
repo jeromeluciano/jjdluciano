@@ -15,22 +15,14 @@ import pollyImg from "../public/images/projects/polly.png";
 import netflixImg from "../public/images/projects/netflix.jpg";
 import ProjectItem from "./project/project-item";
 import Section from "./section";
+import SectionTitle from "./section-title";
 
 export default function ProjectSection() {
   const primaryColor = usePrimaryColor();
   return (
     <Section delay={1.5}>
       <Stack my="8" spacing={8}>
-        <Text
-          fontWeight="bold"
-          textDecoration="underline"
-          textUnderlineOffset="5px"
-          // @ts-ignore
-          textDecorationThickness={2}
-          color={primaryColor}
-        >
-          projects
-        </Text>
+        <SectionTitle title="projects" />
         <SimpleGrid columns={[1, 1, 2, 2]} minHeight={120} gap={8}>
           <ProjectItem
             thumbnail={cyclickImg}
@@ -41,13 +33,13 @@ export default function ProjectSection() {
           <ProjectItem
             thumbnail={pollyImg}
             title="Polly"
-            link="https://polly.jjdluciano.com/"
+            link="/projects/polly"
             description="App that lets you instantly create poll"
           />
           <ProjectItem
             thumbnail={netflixImg}
             title="Netflix Clone"
-            link="https://netflix-clone-nine-tau.vercel.app/"
+            link="/projects/netflix-clone"
             description="A clone of Netflix with NextJS + TailwindCSS"
           />
         </SimpleGrid>
