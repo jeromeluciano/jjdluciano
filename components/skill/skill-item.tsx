@@ -21,8 +21,8 @@ export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
         _hover={{ transform: "scale(1.1)" }}
         backgroundColor={bgColor}
         // borderColor=""
-        py={4}
-        px={3}
+        py={2}
+        px={2}
         // borderWidth="1px"
         rounded="lg"
       >
