@@ -1,14 +1,12 @@
 import { LinkIcon } from "@chakra-ui/icons";
 import {
   Heading,
-  HStack,
   Link,
-  List,
+
   ListItem,
   OrderedList,
   Text,
   UnorderedList,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import mdx from "mdx/types";
 
