@@ -13,38 +13,17 @@ import {
 import mdx from "mdx/types";
 
 export const components: mdx.MDXComponents = {
-  h1: (props) => {
-    const textColor = useColorModeValue("gray.700", "gray.200");
-    return <Heading as="h1" {...props} fontWeight="bold" color={textColor} />;
-  },
-  h2: (props) => {
-    const textColor = useColorModeValue("gray.700", "gray.200");
-    return (
-      <Heading fontSize="xl" fontWeight="bold" color={textColor} {...props} />
-    );
-  },
-  h3: (props) => <Heading as="h3" fontSize="lg" {...props} color="gray.200" />,
-  h4: (props) => {
-    const textColor = useColorModeValue("gray.700", "gray.200");
-    return <Heading as="h4" fontSize="md" {...props} color={textColor} />;
-  },
-  p: (props) => {
-    const textColor = useColorModeValue("gray.700", "gray.200");
-    return <Text as="p" {...props} color={textColor} />;
-  },
-  a: ({children, ...props}) => {
-    const textColor = useColorModeValue("blue.400", "blue.200");
-    return (
-        <Link as="a" fontWeight="bold" {...props} color={textColor}> 
-          {children} <LinkIcon />
-        </Link>
-     
-    );
-  },
-  li: (props) => {
-    const textColor = useColorModeValue("gray.700", "gray.200");
-    return <ListItem {...props} marginLeft="4" mt="2" color={textColor} />;
-  },
+  h1: (props ) => <Heading as="h1" {...props} fontWeight="bold" />,
+  h2: (props) => <Heading fontSize="xl" fontWeight="bold" {...props} />,
+  h3: (props) => <Heading as="h3" fontSize="lg" {...props} />,
+  h4: (props) => <Heading as="h4" fontSize="md" {...props} />,
+  p: (props) => <Text as="p" {...props} />,
+  a: ({ children, ...props }) => (
+    <Link as="a" fontWeight="bold" {...props}>
+      {children} <LinkIcon />
+    </Link>
+  ),
+  li: (props) => <ListItem {...props} marginLeft="4" mt="2" />,
   ul: ({ children }) => <UnorderedList>{children}</UnorderedList>,
   ol: ({ children }) => <OrderedList>{children}</OrderedList>,
 };
