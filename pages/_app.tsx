@@ -4,7 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
 import { theme } from "../styles/theme";
 import { MDXProvider } from "@mdx-js/react";
-import { components } from "./MDXComponents";
+import { components } from "../components/MDXComponents";
 import Fonts from "../styles/Fonts";
 
 
