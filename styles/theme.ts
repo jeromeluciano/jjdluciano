@@ -16,6 +16,15 @@ const breakpoints = {
 
 export const theme = extendTheme({
   config,
+  components: {
+    Link: {
+      variants: {
+        'mdx-link': (props) => ({
+          color: props.colorMode === "light" ? "blue.400":"blue.200"
+        })
+      }
+    }
+  },
   fonts: {
     heading: `'Satoshi Variable', sans-serif`,
     body: `'Satoshi Variable', sans-serif`,
@@ -26,10 +35,7 @@ export const theme = extendTheme({
       body: {
         bg: mode("blue.50", "rgb(39 39 42)")(props),
       },
-      a: {
-        // color: mode("blue.400", "blue.200")(props)
-        color: props.colorMode === "light" ? "blue.400" : "blue.200"
-      }
     }),
   },
+  
 });

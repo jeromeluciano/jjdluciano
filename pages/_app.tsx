@@ -6,6 +6,7 @@ import { theme } from "../styles/theme";
 import { MDXProvider } from "@mdx-js/react";
 import { components } from "../components/MDXComponents";
 import Fonts from "../styles/Fonts";
+import { ImageModalProvider } from "../contexts/image-context";
 
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }) {
     <MDXProvider components={components}>
       <ChakraProvider theme={theme}>
         <Fonts />
+        <ImageModalProvider>
           <Component {...pageProps} />
+        </ImageModalProvider>
       </ChakraProvider>
     </MDXProvider>
   );

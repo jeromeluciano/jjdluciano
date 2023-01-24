@@ -16,7 +16,7 @@ export const components: mdx.MDXComponents = {
   h4: (props) => <Heading as="h4" fontSize="md" {...props} />,
   p: (props) => <Text as="p" {...props} />,
   a: ({ children, ...props }) => (
-    <Link as="a" fontWeight="bold" {...props}>
+    <Link as="a" fontWeight="bold" variant="mdx-link" {...props}>
       {children} <LinkIcon />
     </Link>
   ),
