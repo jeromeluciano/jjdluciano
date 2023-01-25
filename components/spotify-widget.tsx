@@ -21,7 +21,7 @@ export default function SpotifyWidget() {
       <FaSpotify color={iconColor} size={16} />
       <Text color={textColor} fontWeight="semibold" fontSize="xs">
         {song.isPlaying
-          ? <a href={song.songUrl} className="spotify-link">{song.songNameWithArtist}</a>
+          ? <a href={song.songUrl} className="spotify-link">Listening to {song.songNameWithArtist}</a>
           : "Not playing - Spotify"}
       </Text>
     </HStack>
