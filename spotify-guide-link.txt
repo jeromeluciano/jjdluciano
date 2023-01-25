@@ -1,0 +1,1 @@
+https://dev.to/j471n/how-to-use-spotify-api-with-nextjs-50o5#creating-api-route-for-currently-playing-song
