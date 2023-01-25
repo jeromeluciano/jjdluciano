@@ -22,9 +22,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const songNameWithArtist = `${currentSongPlaying.item.name} - ${currentSongPlaying.item.artists[0].name}`;
   const songUrl = currentSongPlaying.item.external_urls.spotify;
 
-  return res.status(200).json({
-    isPlaying,
-    songNameWithArtist,
-    songUrl
-  });
+  return res
+          .status(200)
+          .setHeader('cache-control', 'public, s-maxage=60, stale-while-revalidate=30')
+          .json({
+            isPlaying,
+            songNameWithArtist,
+            songUrl
+          });
 }

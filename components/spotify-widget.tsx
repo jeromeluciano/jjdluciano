@@ -9,6 +9,7 @@ import { fetcher as currentlyPlayingFetch } from "../fetchers/currently-playing"
 export default function SpotifyWidget() {
   const iconColor = useColorModeValue("#34D399", "#00DE80");
   const textColor = useColorModeValue("gray.600", "gray.300");
+  
   const { data: song, isLoading } = useSWR('/api/currently-playing', currentlyPlayingFetch)
 
   if (isLoading) {
