@@ -33,6 +33,10 @@ const Fonts = () => (
       margin-bottom: 0;
       padding:0;
     }
+    
+    .spotify-link:hover {
+      text-decoration: underline;
+    }
   `} />
 )
 

@@ -1,8 +1,9 @@
-import { Box, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Stack, Text, useColorModeValue, VStack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useEffect, useMemo, useState } from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaViber } from "react-icons/fa";
 import Section from "./section";
+import SpotifyWidget from "./spotify-widget";
 
 export default function FooterSection() {
   const textColor = useColorModeValue("gray.600", "gray.400");
@@ -20,7 +21,8 @@ export default function FooterSection() {
 
   return (
     <Section delay={delay}>
-      <Box as="footer" pt="6" pb="3" mx="auto" my="auto">
+      <VStack spacing={4} as="footer" pt="6" pb="3" mx="auto" my="auto">
+      <SpotifyWidget />
         <Stack
           direction="row"
           justifyContent="center"
@@ -48,11 +50,12 @@ export default function FooterSection() {
               <FaViber size={24} color={iconColor} />
             </Box>
           </a>
+          
         </Stack>
         <Text textAlign="center" color={textColor} fontSize="xs">
           &copy; {new Date().getFullYear()} John Jerome D. Luciano
         </Text>
-      </Box>
+      </VStack>
     </Section>
   );
 }
