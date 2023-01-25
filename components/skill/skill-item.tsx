@@ -22,6 +22,7 @@ export default function SkillItem({ icon, itemText, delay, ...pageProps }) {
         backgroundColor={bgColor}
         // borderColor=""
         py={2}
+        mx={2}
         px={2}
         // borderWidth="1px"
         rounded="lg"

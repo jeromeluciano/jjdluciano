@@ -39,9 +39,9 @@ export default function Navbar() {
           </Box>
           <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
             <LinkBox cursor="pointer">
-              <Link href="/jjdluciano-resume.pdf">
+              <a href="/jjdluciano-resume.pdf" target="_blank">
                 <Text fontSize="xl">resume</Text>
-              </Link>
+              </a>
             </LinkBox>
           </Box>
           <Stack

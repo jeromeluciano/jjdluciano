@@ -34,7 +34,7 @@ export default function AboutSection() {
           color={textColor}
           lineHeight="10"
           textAlign="justify"
-          px="4"
+          // px="4"
           style={{ textIndent: "25px" }}
         >
           I am a problem solver at heart, with a strong desire to simplify

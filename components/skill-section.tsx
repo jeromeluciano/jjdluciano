@@ -23,14 +23,15 @@ export default function SkillSection() {
   const primaryColor = usePrimaryColor();
   return (
     <Section delay={1.2}>
-      <Stack mt="10" spacing={8} id="skills">
+      <Stack mt="10" spacing={8} id="skills"> 
         <SectionTitle title="technologies I used" />
         <Grid
           templateRows="repeat(3, 1fr)"
           templateColumns="repeat(3, 1fr)"
           gap={10}
+          // rowGap="4"
+          // gridAutoFlow=""
         >
-
           <SkillItem
             icon={HTMLIcon}
             itemText="HTML5"
