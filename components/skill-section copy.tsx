@@ -31,7 +31,7 @@ export default function SkillSection() {
           textDecorationThickness={2}
           color={primaryColor}
         >
-          skills & technologies I used
+          skills & technologies I use
         </Text>
         <Stack
           direction="row"
