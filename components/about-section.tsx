@@ -39,7 +39,7 @@ export default function AboutSection() {
         >
           I am a problem solver at heart, with a strong desire to simplify
           complex issues and devise elegant solutions. I am also a skilled web
-          developer with a passion for programming logic and structure. I am
+          developer with a passion for programming, logic and structure. I am
           passionate about web development, both frontend and backend. 
         </Text>
         {/* <Center mt="2">
