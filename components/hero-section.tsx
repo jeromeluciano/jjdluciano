@@ -62,7 +62,7 @@ export default function HeroSection() {
           </Text>
 
           <HStack mt="4" justifyContent={{ sm: "center", md: "left" }}>
-            <a href="https://github.com/jeromeluciano" target="_blank">
+            <a href="https://github.com/jeromeluciano" target="_blank" rel="noreferrer">
               <Button
                 width="fit-content"
                 rounded="lg"
@@ -75,7 +75,7 @@ export default function HeroSection() {
                 Github
               </Button>
             </a>
-            <a href="/jjdluciano-resume.pdf" target="_blank">
+            <a href="/jjdluciano-resume.pdf" target="_blank" rel="noreferrer">
               <Button
                 width="fit-content"
                 rounded="lg"

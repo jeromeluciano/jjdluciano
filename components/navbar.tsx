@@ -29,7 +29,7 @@ export default function Navbar() {
       <Box py="4" mx={{ sm: "4" }}>
         <Flex gridGap={8} alignItems="center">
           <Box flex={{ sm: "1", md: 0 }}>
-            <LinkBox cursor="pointer"  w="fit-content">
+            <LinkBox cursor="pointer" w="fit-content">
               <Link href="/">
                 <Text fontWeight="bold" fontSize="xl" color={primaryColor}>
                   jjdl
@@ -37,7 +37,13 @@ export default function Navbar() {
               </Link>
             </LinkBox>
           </Box>
-          
+          {/* <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
+            <LinkBox cursor="pointer">
+              <a href="/jjdluciano-resume.pdf" target="_blank">
+                <Text fontSize="xl">resume</Text>
+              </a>
+            </LinkBox>
+          </Box> */}
           <Stack
             direction="row"
             spacing="4"
