@@ -7,6 +7,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { components } from "../components/MDXComponents";
 import Fonts from "../styles/Fonts";
 import { ImageModalProvider } from "../contexts/image-context";
+import { Analytics } from '@vercel/analytics/react'
 
 
 function MyApp({ Component, pageProps }) {
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         <Fonts />
         <ImageModalProvider>
           <Component {...pageProps} />
+          <Analytics />
         </ImageModalProvider>
       </ChakraProvider>
     </MDXProvider>
