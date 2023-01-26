@@ -37,6 +37,7 @@ const Fonts = () => (
     .spotify-link:hover {
       text-decoration: underline;
     }
+
   `} />
 )
 

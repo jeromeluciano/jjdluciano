@@ -11,6 +11,10 @@ export interface SpotifyType {
     external_urls: {
       spotify: string
     };
+    album: {
+      images: { url: string, height: number, width: number }[],
+      name: string
+    }
   };
   is_playing: boolean;
 }

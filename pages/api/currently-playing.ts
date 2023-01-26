@@ -21,6 +21,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const isPlaying = currentSongPlaying.is_playing;
   const songNameWithArtist = `${currentSongPlaying.item.name} - ${currentSongPlaying.item.artists[0].name}`;
   const songUrl = currentSongPlaying.item.external_urls.spotify;
+  const imageUrl = currentSongPlaying.item.album.images[2]
+  const albumName = currentSongPlaying.item.album.name;
 
   return res
           .status(200)
@@ -28,6 +30,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           .json({
             isPlaying,
             songNameWithArtist,
-            songUrl
+            imageUrl,
+            songUrl,
+            songName: currentSongPlaying.item.name,
+            artist: currentSongPlaying.item.artists[0],
+            albumName
           });
 }
