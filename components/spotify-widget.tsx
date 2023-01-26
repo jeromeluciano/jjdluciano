@@ -29,7 +29,7 @@ export default function SpotifyWidget() {
     currentlyPlayingFetch
   );
 
-  if (isLoading || song.isPlaying == false) {
+  if (isLoading) {
     return;
   }
 
