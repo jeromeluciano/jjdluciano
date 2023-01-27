@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:updated_time" content="1666077081" />
         <meta
           property="og:image"
-          content="https://www.jjdluciano.com/images/opengraph1.png"
+          content="https://www.jjdluciano.com/images/opengraph.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
