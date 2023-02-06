@@ -14,16 +14,20 @@ import {
   TRPCIcon,
   LaravelIcon,
 } from "./icons-svg/custom-icons";
+import { SiC, SiChakraui } from "react-icons/si";
+
 import Section from "./section";
 import SectionTitle from "./section-title";
 import SkillItem from "./skill/skill-item";
+
+const ChakraIcon = () => <SiChakraui color="#58c9c8" size={32} />;
 
 export default function SkillSection() {
   const textColor = useTextColor();
   const primaryColor = usePrimaryColor();
   return (
     <Section delay={1.2}>
-      <Stack mt="10" spacing={8} id="skills"> 
+      <Stack mt="10" spacing={8} id="skills">
         <SectionTitle title="technologies I use" />
         <Grid
           templateRows="repeat(3, 1fr)"
@@ -32,13 +36,7 @@ export default function SkillSection() {
           // rowGap="4"
           // gridAutoFlow=""
         >
-          <SkillItem
-            icon={HTMLIcon}
-            itemText="HTML5"
-            w="8"
-            h="8"
-            delay={0.1}
-          />
+          <SkillItem icon={HTMLIcon} itemText="HTML5" w="8" h="8" delay={0.1} />
           <SkillItem icon={CSSIcon} itemText="CSS3" w="8" h="8" delay={0.2} />
           <SkillItem
             icon={JSIcon}
@@ -70,7 +68,6 @@ export default function SkillSection() {
             delay={0.6}
           />
 
-
           <SkillItem
             icon={PrismaIcon}
             itemText="Prisma"
@@ -86,13 +83,12 @@ export default function SkillSection() {
             delay={0.8}
           />
           <SkillItem
-            icon={LaravelIcon}
-            itemText="Laravel"
+            icon={ChakraIcon}
+            itemText="ChakraUI"
             w="8"
             h="8"
             delay={0.9}
           />
-
         </Grid>
       </Stack>
     </Section>
