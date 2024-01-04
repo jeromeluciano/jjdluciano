@@ -8,6 +8,7 @@ import { components } from "../components/MDXComponents";
 import Fonts from "../styles/Fonts";
 import { ImageModalProvider } from "../contexts/image-context";
 import { Analytics } from '@vercel/analytics/react'
+import FooterSection from "../components/footer-section";
 
 
 function MyApp({ Component, pageProps }) {
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
           <Analytics />
         </ImageModalProvider>
+        <FooterSection />
       </ChakraProvider>
     </MDXProvider>
   );

@@ -42,14 +42,6 @@ export default function AboutSection() {
           developer with a passion for programming, logic and structure. I am
           passionate about web development, both frontend and backend. 
         </Text>
-        {/* <Center mt="2">
-          <AnimatedButton
-            title="Download my resume"
-            handler={downloadResume}
-            rightIcon={<ArrowLeftIcon fontSize="xs" />}
-            leftIcon={<ArrowRightIcon fontSize="xs" />}
-          />
-        </Center> */}
       </Stack>
     </Section>
   );

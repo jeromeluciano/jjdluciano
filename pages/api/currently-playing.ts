@@ -11,6 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
   }
   const currentSongPlaying: SpotifyType = await response.json();
+  console.log(currentSongPlaying)
 
   if (currentSongPlaying.item == null) {
     return res.status(200).json({

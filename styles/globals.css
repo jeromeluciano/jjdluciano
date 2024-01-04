@@ -1,9 +1,28 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+
 body {
-  padding: 0;
+  font-family: Jost;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 a {
@@ -19,8 +38,41 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.animated-button-cards::before {
+  @apply pointer-events-none absolute rounded-lg select-none opacity-0 transition-opacity duration-300 hover:opacity-100;
+  background: radial-gradient(200px circle at var(--x) var(--y),
+      rgba(254, 249, 195, 0.62) 0,
+      rgba(249, 168, 212, 0.62) 25%,
+      rgba(255, 255, 255, 0) 50%,
+      transparent 75%);
+  z-index: -1;
+  content: '';
+  inset: -1px;
+}
+
+.animated-button-cards:hover {
+  opacity: 100;
+}
+
+.animated-feature-cards::before {
+  @apply pointer-events-none absolute rounded-3xl select-none opacity-0 transition-opacity duration-300 hover:opacity-100;
+  background: radial-gradient(600px circle at var(--x) var(--y),
+      rgba(254, 249, 195, 0.62) 0,
+      rgba(249, 168, 212, 0.62) 25%,
+      rgba(255, 255, 255, 0) 50%,
+      transparent 75%);
+  z-index: -1;
+  content: '';
+  inset: -1px;
+}
+
+.animated-feature-cards:hover {
+  opacity: 100;
 }

@@ -5,12 +5,7 @@ export default function SectionTitle({ title }) {
   const primaryColor = usePrimaryColor();
 
   return (
-    <Text
-      fontWeight="bold"
-      textDecoration="underline"
-      textUnderlineOffset="5px"
-      // @ts-ignore
-      textDecorationThickness={2}
+    <Text fontWeight="900"
       color={primaryColor}
       fontSize="lg"
     >

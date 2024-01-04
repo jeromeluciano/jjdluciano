@@ -26,14 +26,16 @@ export const theme = extendTheme({
     }
   },
   fonts: {
-    heading: `'Satoshi Variable', sans-serif`,
-    body: `'Satoshi Variable', sans-serif`,
+    heading: `'Jost', sans-serif`,
+    body: `'Jost', sans-serif`,
   },
   breakpoints,
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("blue.50", "rgb(39 39 42)")(props),
+        bg: mode("blue.50", "#09090B")(props),
+
+        WebkitFontSmoothing: 'antialiased'
       },
     }),
   },

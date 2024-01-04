@@ -31,8 +31,8 @@ export default function Navbar() {
           <Box flex={{ sm: "1", md: 0 }}>
             <LinkBox cursor="pointer" w="fit-content">
               <Link href="/">
-                <Text fontWeight="bold" fontSize="xl" color={primaryColor}>
-                  jjdl
+                <Text fontWeight="900" fontSize="xl" color={primaryColor}>
+                  JJDL 
                 </Text>
               </Link>
             </LinkBox>
@@ -59,7 +59,8 @@ export default function Navbar() {
               display={{ sm: "none", md: "flex" }}
             ></Stack>
             <Stack direction={{ sm: "row" }}>
-              <ToggleThemeButton bg={primaryColor} />
+              {/* <ToggleThemeButton bg={primaryColor} /> */}
+
               <Box display={{ sm: "inline-block", md: "none" }}>
                 <Menu>
                   <MenuButton

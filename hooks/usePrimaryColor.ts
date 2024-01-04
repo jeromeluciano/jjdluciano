@@ -1,6 +1,6 @@
 import { useColorModeValue } from "@chakra-ui/react";
 
 export default () => {
-  const primaryColor = useColorModeValue("blue.500", "blue.300");
+  const primaryColor = useColorModeValue("yellow.900", "yellow.50");
   return primaryColor;
 };

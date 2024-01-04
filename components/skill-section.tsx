@@ -1,4 +1,4 @@
-import { Box, Grid, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Icon, Stack, Text } from "@chakra-ui/react";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import useTextColor from "../hooks/useTextColor";
 import {
@@ -25,11 +25,17 @@ const ChakraIcon = () => <SiChakraui color="#58c9c8" size={32} />;
 export default function SkillSection() {
   const textColor = useTextColor();
   const primaryColor = usePrimaryColor();
+
   return (
     <Section delay={1.2}>
-      <Stack mt="10" spacing={8} id="skills">
-        <SectionTitle title="technologies I use" />
-        <Grid
+      <Stack mt="10" spacing={4} id="skills">
+        <Flex>
+          <SectionTitle title="Toolsets" />
+          <Flex>
+            
+          </Flex>
+        </Flex>
+        {/*<Grid
           templateRows="repeat(3, 1fr)"
           templateColumns="repeat(3, 1fr)"
           gap={10}
@@ -45,7 +51,6 @@ export default function SkillSection() {
             h="8"
             delay={0.3}
           />
-
           <SkillItem
             icon={ReactIcon}
             itemText="React.js"
@@ -89,7 +94,7 @@ export default function SkillSection() {
             h="8"
             delay={0.9}
           />
-        </Grid>
+        </Grid> */}
       </Stack>
     </Section>
   );

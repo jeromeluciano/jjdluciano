@@ -7,6 +7,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
+  Stack,
   Text,
   useColorModeValue,
   VStack,
@@ -34,37 +35,39 @@ export default function SpotifyWidget() {
   }
 
   return (
-    <HStack alignContent={"center"} justifyContent="center">
-      <FaSpotify color={iconColor} size={16} />
+    <HStack alignContent={"center"} justifyContent="center" display={{sm: "none", md: "flex"}}>
       {song.isPlaying ? (
         <Popover placement="top" trigger="hover">
           <PopoverTrigger>
-            <Text color={textColor} fontWeight="semibold" fontSize="xs">
-              <Text className="spotify-link">
-                Listening to Spotify
+            <Stack direction="row">
+              <FaSpotify color={iconColor} size={18} />
+              <Text color={textColor} fontWeight="semibold" fontSize="xs">
+                <Text className="spotify-link">
+                  Listening to Spotify
+                </Text>
               </Text>
-            </Text>
+            </Stack>
           </PopoverTrigger>
-          <PopoverContent w="fit-content" px="4" py="3" bg={bgColor} borderRadius="md">
+          <PopoverContent w="fit-content" px="4" py="3" bg={bgColor} borderRadius="15">
             <VStack alignItems="start" spacing={3}>
               <HStack alignItems="center" justifyContent="space-between" w="full">
                 <Text fontSize="sm">Listening to Spotify</Text>
                 <Box>
-                  <FaSpotify color={iconColor} size={16} />
+                  <FaSpotify color={iconColor} size={18} />
                 </Box>
               </HStack>
               <HStack justifyItems="center">
                 <Box>
                   <Image src={song.imageUrl.url} width={64} height={64} />
-                 </Box>
-                <VStack  alignItems="start" spacing={1}>
+                </Box>
+                <VStack alignItems="start" spacing={1}>
                   <Text fontSize="xs" fontWeight="semibold">{song.songName}</Text>
                   <Text fontSize="xs">by {song.artist.name}</Text>
                   <Text fontSize="xs">on {song.albumName}</Text>
                 </VStack>
               </HStack>
               <Link href={song.songUrl} isExternal w="full">
-                <Button w="full" fontSize="xs" leftIcon={<FaSpotify color={spotifyIconBnW} size={16} />}>Play on Spotify</Button>
+                <Button w="full" fontSize="xs" leftIcon={<FaSpotify color={spotifyIconBnW} size={18} />}>Play on Spotify</Button>
               </Link>
             </VStack>
           </PopoverContent>

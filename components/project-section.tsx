@@ -21,11 +21,12 @@ export default function ProjectSection() {
   const primaryColor = usePrimaryColor();
   return (
     <Section delay={1.5}>
-      <Stack my="8" spacing={8}>
-        <SectionTitle title="projects" />
-        <SimpleGrid columns={[1, 1, 2, 2]} minHeight={120} gap={8}>
+      <Stack my="8" spacing={4}>
+        <SectionTitle title="Projects" />
+        <Grid templateColumns="repeat(3, 1fr)" gap={8}>
           <ProjectItem
             thumbnail={cyclickImg}
+            githubLink="https://github.com/jeromeluciano/Cyclick"
             title="CyClick"
             link="https://github.com/jeromeluciano/Cyclick"
             description="App that lets you record your travel"
@@ -33,16 +34,18 @@ export default function ProjectSection() {
           <ProjectItem
             thumbnail={pollyImg}
             title="Polly"
+            githubLink="https://github.com/jeromeluciano/Cyclick"
             link="/projects/polly"
             description="App that lets you instantly create poll"
           />
           <ProjectItem
             thumbnail={netflixImg}
             title="Netflix Clone"
+            githubLink="https://github.com/jeromeluciano/Cyclick"
             link="/projects/netflix-clone"
             description="A clone of Netflix with NextJS + TailwindCSS"
           />
-        </SimpleGrid>
+        </Grid>
       </Stack>
     </Section>
   );
