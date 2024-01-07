@@ -9,7 +9,7 @@ import FeaturedCard from "../featured-card";
 import { generateIconElement } from "../../utils/generator";
 
 interface ProjectItemProps {
-  thumbnail: string | StaticImageData;
+  thumbnail: StaticImageData;
   title: string;
   link: string;
   githubLink?: string;
@@ -32,7 +32,7 @@ export default function ProjectItem({ thumbnail, title, link, githubLink, descri
                 <Box p={0}>
                   <Image
                     as={NextImage}
-                    src={thumbnail}
+                    src={thumbnail.src}
                     alt={title}
                     opacity={isHovered ? "0.9" : "1"}
                     objectFit="contain"
