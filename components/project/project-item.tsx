@@ -23,7 +23,7 @@ export default function ProjectItem({ thumbnail, title, link, githubLink, descri
 
   return (
     <GridItem _hover={{ transform: "scale(1.1)", transition: "0.2s" }} onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)} borderRadius="3xl"  >
+      onMouseLeave={() => setIsHovered(false)} borderRadius="3xl">
       <FeaturedCard>
         <Box h="100%">
           <LinkBox cursor="pointer" display="flex" flexDirection="column" w="100%">
@@ -32,7 +32,7 @@ export default function ProjectItem({ thumbnail, title, link, githubLink, descri
                 <Box p={0}>
                   <Image
                     as={NextImage}
-                    {/* @ts-ignore */}
+                    // @ts-ignore
                     src={thumbnail}
                     alt={title}
                     opacity={isHovered ? "0.9" : "1"}
