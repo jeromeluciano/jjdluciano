@@ -12,7 +12,7 @@ type WrapperStyle = MotionStyle & {
 
 interface AnimatedButtonProps {
   title: string;
-  handler: () => void;
+  handler?: () => void;
   RightIcon?: IconType,
   LeftIcon?: IconType
 }
