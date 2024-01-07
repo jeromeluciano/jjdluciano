@@ -49,11 +49,9 @@ function AnimatedButton({ title, handler, RightIcon, LeftIcon }: AnimatedButtonP
       className="group flex items-center space-x-2 rounded-lg relative px-4 py-1 overflow-hidden border bg-gradient-to-b from-neutral-950/90 to-neutral-950/90 transition duration-300 dark:from-neutral-950/90 dark:to-neutral-950/90 md:hover:border-transparent text-sm"
       onClick={handler}
     >
-      {LeftIcon ?
-        <Icon as={LeftIcon} />:null}
+        {LeftIcon ? <Icon as={LeftIcon} size={16} />:null}
         <span>{title}</span>
     </button>
-
   </motion.div>)
 }
 

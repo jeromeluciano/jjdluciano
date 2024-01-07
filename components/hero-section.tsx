@@ -37,10 +37,11 @@ export default function HeroSection() {
         <Stack flex="2" spacing={4} letterSpacing="2" justifyContent="center">
           <Grid templateColumns="100px auto" columnGap={5}>
             <Box>
-              <Image as={NextImage} w="40" h="40" rounded="3xl" src={`${Me}`} alt="me" />
+              {/* @ts-ignore */}
+              <Image as={NextImage} w="40" h="40" rounded="3xl" src={Me} alt="me" />
             </Box>
             <VStack alignItems="start" justifyContent="center">
-              
+
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
                 textAlign={{ sm: "center", md: "justify" }}
@@ -66,11 +67,12 @@ export default function HeroSection() {
             textAlign={{ sm: "justify", md: "justify" }}
             lineHeight="10"
           >
-           Hey there! I love messing around with <span class="text-blue-300/90">web stuff</span>, always trying to figure out how things tick. Recently jumped into the <span className="text-yellow-200/90">Linux world</span>, messing around with <span className="text-pink-200/90">EndeavorOS</span> and soaking up everything I can. When I&apos;m not nerding out on <span className="text-blue-300/90">tech</span>, you&apos;ll probably find me cruising on my <span className="text-red-400/90">bike</span> or getting lost in some <span className="text-blue-300/90">video game</span> world. Let&apos;s <span className="text-blue-300/90">build cool things</span> and have fun doing it! 🚀🕹️🚴‍♂️          </Text>
+            Hey there! I love messing around with <span className="text-blue-300/90">web stuff</span>, always trying to figure out how things tick. Recently jumped into the <span className="text-yellow-200/90">Linux world</span>, messing around with <span className="text-pink-200/90">EndeavorOS</span> and soaking up everything I can. When I&apos;m not nerding out on <span className="text-blue-300/90">tech</span>, you&apos;ll probably find me cruising on my <span className="text-red-400/90">bike</span> or getting lost in some <span className="text-blue-300/90">video game</span> world. Let&apos;s <span className="text-blue-300/90">build cool things</span> and have fun doing it! 🚀🕹️🚴‍♂️
+          </Text>
 
           <HStack mt="8" justifyContent={{ sm: "left", md: "left" }}>
             <a href="https://github.com/jeromeluciano" target="_blank" rel="noreferrer">
-              <AnimatedButton title="Github" LeftIcon={FaGithub}/>
+              <AnimatedButton title="Github" LeftIcon={FaGithub} />
             </a>
             <a href="/jjdluciano-resume.pdf" target="_blank" rel="noreferrer">
               <AnimatedButton title="My Resume" LeftIcon={FaFileDownload} />
