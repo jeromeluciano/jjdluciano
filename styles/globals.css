@@ -61,6 +61,22 @@ a {
   opacity: 100;
 }
 
+.animated-writing-feature-cards::before {
+  @apply pointer-events-none absolute rounded-3xl select-none opacity-0 transition-opacity duration-300 hover:opacity-100;
+  background: radial-gradient(1200px circle at var(--x) var(--y),
+      rgba(254, 249, 195, 0.62) 0,
+      rgba(249, 168, 212, 0.62) 25%,
+      rgba(255, 255, 255, 0) 50%,
+      transparent 75%);
+  z-index: -1;
+  content: '';
+  inset: -1px;
+}
+
+.animated-writing-feature-cards:hover {
+  opacity: 100;
+}
+
 .animated-feature-cards::before {
   @apply pointer-events-none absolute rounded-3xl select-none opacity-0 transition-opacity duration-300 hover:opacity-100;
   background: radial-gradient(600px circle at var(--x) var(--y),
@@ -75,4 +91,42 @@ a {
 
 .animated-feature-cards:hover {
   opacity: 100;
+}
+
+code {
+  counter-reset: line;
+  padding: 15px;
+
+  margin: 1rem 0;
+}
+
+pre {
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+img {
+  @apply rounded-3xl my-4;
+}
+
+code>[data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: gray;
+}
+
+code>[data-highlighted-line] {
+  background-color: #32323D;
+}
+
+code[data-line-numbers-max-digits='2']>[data-line]::before {
+  width: 2rem;
+}
+
+code[data-line-numbers-max-digits='3']>[data-line]::before {
+  width: 3rem;
 }

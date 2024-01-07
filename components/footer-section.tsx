@@ -3,12 +3,13 @@ import { useRouter } from "next/router";
 import { useEffect, useMemo, useState } from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaViber } from "react-icons/fa";
 import useIconColor from "../hooks/useIconColor";
+import useTextColor from "../hooks/useTextColor";
 import Section from "./section";
 import SpotifyWidget from "./spotify-widget";
 import SpotifyWidgetLink from "./spotify-widget-link";
 
 export default function FooterSection() {
-  const textColor = useColorModeValue("gray.600", "gray.400");
+  const textColor = useTextColor();
   const iconColor = useIconColor();
 
   const router = useRouter();
@@ -18,7 +19,7 @@ export default function FooterSection() {
   return (
     <Section delay={1.9} as="footer" className="footer">
       <Stack spacing={4} py={4} marginTop="auto">
-        <Container maxW="container.lg" px={4}> 
+        <Container maxW="container.md" px={4}> 
             
           <HStack direction="column" justifyContent="space-between" px={4} >
             <Text textAlign="center" color={textColor} fontSize="xs">
@@ -38,22 +39,22 @@ export default function FooterSection() {
 
               <a href="https://www.facebook.com/jjdluciano">
                 <Box>
-                  <FaFacebook size={18} color={iconColor} />
+                  <FaFacebook size={18} className="text-yellow-50/90" />
                 </Box>
               </a>
               <a href="https://www.linkedin.com/in/john-jerome-luciano-a65490233/">
                 <Box>
-                  <FaLinkedin size={18} color={iconColor} />
+                  <FaLinkedin size={18} className="text-yellow-50/90" />
                 </Box>
               </a>
               <a href="https://github.com/jeromeluciano">
                 <Box>
-                  <FaGithub size={18} color={iconColor} />
+                  <FaGithub size={18} className="text-yellow-50/90" />
                 </Box>
               </a>
               <a href="https://msng.link/o/?639156969987=vi">
                 <Box>
-                  <FaViber size={18} color={iconColor} />
+                  <FaViber size={18} className="text-yellow-50/90"/>
                 </Box>
               </a>
             </Stack>

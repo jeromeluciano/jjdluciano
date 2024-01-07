@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Flex, Stack, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 import AboutSection from "../components/about-section";
@@ -8,6 +8,7 @@ import HeroSection from "../components/hero-section";
 import Layout from "../components/layouts/main";
 import ProjectSection from "../components/project-section";
 import SkillSection from "../components/skill-section";
+import WritingsSection from "../components/writings-section";
 
 export default function Home() {
   return (
@@ -40,12 +41,12 @@ export default function Home() {
         />
       </Head>
       <Layout>
-        <DynamicHeroSection />
-        {/* About */}
-        <SkillSection />
-        <ProjectSection />
-        {/* end about */}
-
+        <Flex direction="column" gap={6}>
+          <DynamicHeroSection />
+          <WritingsSection />
+          <SkillSection />
+          <ProjectSection />
+        </Flex>
       </Layout>
 
     </>

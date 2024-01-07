@@ -1,12 +1,20 @@
 /** @type {import('next').NextConfig} */
-const withMDX = require("@next/mdx")({
+import rehypePrettyCode from 'rehype-pretty-code'
+import mdx from '@next/mdx'
+
+/** @type {import('rehype-pretty-code').Options}*/
+const options = {
+  theme: 'one-dark-pro',
+}
+
+const withMDX = mdx({
   extension: /\.mdx?$/,
   options: {
     // If you use remark-gfm, you'll need to use next.config.mjs
     // as the package is ESM only
     // https://github.com/remarkjs/remark-gfm#install
     remarkPlugins: [],
-    rehypePlugins: [],
+    rehypePlugins: [[rehypePrettyCode, options]],
     // If you use `MDXProvider`, uncomment the following line.
     providerImportSource: "@mdx-js/react",
   },
@@ -24,4 +32,4 @@ const nextConfig = {
   // }
 };
 
-module.exports = withMDX(nextConfig);
+export default withMDX(nextConfig);

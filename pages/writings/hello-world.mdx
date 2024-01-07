@@ -1,0 +1,16 @@
+import WritingLayout from '../../components/layouts/writing-layout.tsx'
+
+export const meta = {
+  title: "Hello, world!",
+  link: "/writings/hello-world",
+};
+
+Hello and welcome to my first blog! In the future, I aspire to delve deeper into topics related to the technology I'm passionate about and all things web-related. Thank you for stopping by! I hope to see you again soon when I write about the things that bring me joy.
+
+```js 
+function printHelloWorld() {
+    console.log('hello, world')
+}
+```
+
+export default ({children}) => <WritingLayout meta={meta}>{children}</WritingLayout>
