@@ -1,11 +1,19 @@
 import { motion } from "framer-motion";
-import { FC, ReactNode } from "react";
-const Section: FC<{ children: ReactNode; delay: number, as?: string, className?: string }> = ({
+import { ReactNode } from "react";
+
+interface SectionProps {
+  children: ReactNode;
+  delay: number;
+  as?: string;
+  className?: string;
+}
+
+export default function Section({
   children,
   delay = 0,
   as = 'div',
   className = ''
-}) => {
+}: SectionProps) {
   return (
     <motion.div
       initial={{ y: 10, opacity: 0 }}
@@ -18,4 +26,3 @@ const Section: FC<{ children: ReactNode; delay: number, as?: string, className?:
   );
 };
 
-export default Section;

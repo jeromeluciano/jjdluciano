@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import FeaturedCard from "../featured-card";
+import { generateIconElement } from "../../utils/generator";
 
 interface ProjectItemProps {
   thumbnail: string | StaticImageData;
@@ -13,10 +14,12 @@ interface ProjectItemProps {
   link: string;
   githubLink?: string;
   description: string;
+  tools?: string[];
 }
 
-export default function ProjectItem({ thumbnail, title, link, githubLink, description }: ProjectItemProps) {
+export default function ProjectItem({ thumbnail, title, link, githubLink, description, tools }: ProjectItemProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const toolsIcons = tools.map(tool => generateIconElement(tool))
 
   return (
     <GridItem _hover={{ transform: "scale(1.1)", transition: "0.2s" }} onMouseEnter={() => setIsHovered(true)}
@@ -26,25 +29,22 @@ export default function ProjectItem({ thumbnail, title, link, githubLink, descri
           <LinkBox cursor="pointer" display="flex" flexDirection="column" w="100%">
             <Link href={link}>
               <Box position="relative" overflow="hidden">
-                <Box p={2}>
+                <Box p={0}>
                   <Image
                     as={NextImage}
                     src={thumbnail}
                     alt={title}
-                    borderRadius={15}
                     opacity={isHovered ? "0.9" : "1"}
                     objectFit="contain"
                   />
                 </Box>
                 {/*<Box role="group" display={isHovered ? "flex" : "none"} position="absolute" top="0" borderRadius={15} bg="rgba(17, 17, 1, 0.5)" w="full" height="full" justifyContent="center" alignItems="center" paddingBottom={0}> */}
-                <Box px={4} pb={4}>
+                <Box px={4} pt={2} pb={4}>
                   <Text fontWeight="bold">{title}</Text>
                   <Text fontSize="xs">{description}</Text>
-                  {githubLink ? <HStack _hover={{ color: "#FFFFF5" }} pt={2}>
-                    <Link href={githubLink} >
-                      <FaGithub />
-                    </Link>
-                  </HStack> : null}
+                  <HStack _hover={{ color: "#FFFFF5" }} pt={2}>
+                    {toolsIcons}
+                  </HStack>
                 </Box>
                 { /* </Box> */}
               </Box>

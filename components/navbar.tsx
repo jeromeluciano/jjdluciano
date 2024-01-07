@@ -17,13 +17,14 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import useBGColor from "../hooks/useBGColor";
 import usePrimaryColor from "../hooks/usePrimaryColor";
 import Section from "./section";
 import ToggleThemeButton from "./toggle-theme-button";
 
 export default function Navbar() {
   const primaryColor = usePrimaryColor();
-  const bgColor = useColorModeValue("purple.50", "gray.800");
+  const bgColor = useBGColor()
   return (
     <Section delay={0.3}>
       <Box py="4" mx={{ sm: "4" }}>
@@ -32,18 +33,26 @@ export default function Navbar() {
             <LinkBox cursor="pointer" w="fit-content">
               <Link href="/">
                 <Text fontWeight="900" fontSize="xl" color={primaryColor}>
-                  JJDL 
+                  JJDL
                 </Text>
               </Link>
             </LinkBox>
           </Box>
-          {/* <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
+          <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
+            <LinkBox cursor="pointer">
+              <Link href={'/writings'}>
+                <Text fontSize="md">writings</Text>
+              </Link>
+            </LinkBox>
+          </Box>
+          <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
             <LinkBox cursor="pointer">
               <a href="/jjdluciano-resume.pdf" target="_blank">
-                <Text fontSize="xl">resume</Text>
+                <Text fontSize="md">projects</Text>
               </a>
             </LinkBox>
-          </Box> */}
+          </Box>
+
           <Stack
             direction="row"
             spacing="4"
@@ -76,17 +85,17 @@ export default function Navbar() {
                         </LinkBox>
                       </MenuItem>
                     </Link>
-                    <Link href="/#about">
+                    <Link href="/writings">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
-                          about
+                          writings
                         </LinkBox>
                       </MenuItem>
                     </Link>
-                    <Link href="/#skills">
+                    <Link href="/projects">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
-                          skills
+                          projects
                         </LinkBox>
                       </MenuItem>
                     </Link>

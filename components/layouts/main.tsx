@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import useBGColor from "../../hooks/useBGColor";
 import FooterSection from "../footer-section";
 import Navbar from "../navbar";
+import { motion } from 'framer-motion'
 
 
 export default function Layout({ children }) {
@@ -21,10 +22,13 @@ export default function Layout({ children }) {
 
   return (
     <>
-    <Container minH="100%" maxW="container.lg" bgColor={bgColor}>
-      <Navbar />
-      <Box mx={{ sm: "4" }}>{children}</Box>
-    </Container>
+        <Container minH="100%" maxW="container.md" bgColor={bgColor}>
+          <Navbar />
+
+        <motion.div initial="hidden" animate="enter" exit="exit" transition={{ duration: 0.4, type: 'easeInOut' }} style={{ position: 'relative' }}>
+          <Box mx={{ sm: "4" }}>{children}</Box>
+        </motion.div>
+        </Container>
     </>
   );
 }

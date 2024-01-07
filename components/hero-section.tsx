@@ -26,11 +26,10 @@ export default function HeroSection() {
   const textColor = useTextColor();
 
   return (
-    <Section delay={0.6}>
+    <Section delay={0.6} className="mt-8">
       <Flex
         flexDirection={{ sm: "column", md: "row" }}
         flexFlow={{ sm: "column-reverse", md: "row" }}
-        mt="8"
         alignItems="center"
         justifyContent="space-between"
         gridGap="8"
@@ -38,16 +37,10 @@ export default function HeroSection() {
         <Stack flex="2" spacing={4} letterSpacing="2" justifyContent="center">
           <Grid templateColumns="100px auto" columnGap={5}>
             <Box>
-              <Image as={NextImage} w="40" h="40" borderRadius={15} src={Me} />
+              <Image as={NextImage} w="40" h="40" rounded="3xl" src={Me} />
             </Box>
             <VStack alignItems="start" justifyContent="center">
-              <Text
-                fontSize={{ sm: "lg", md: "xl" }}
-                color={textColor}
-                textAlign={{ sm: "center", md: "justify" }}
-              >
-                👋 Hello there!
-              </Text>
+              
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
                 textAlign={{ sm: "center", md: "justify" }}
@@ -57,21 +50,25 @@ export default function HeroSection() {
                   John Jerome D. Luciano
                 </Text>
               </Text>
+              <Text
+                fontSize={{ sm: "md", md: "md" }}
+                color="yellow.300"
+                fontWeight="bold"
+                textAlign={{ sm: "center", md: "justify" }}
+              >
+                Web Developer
+              </Text>
             </VStack>
           </Grid>
           <Text
-            fontSize={{ sm: "md", md: "md" }}
+            fontSize={{ sm: "lg", md: "lg" }}
             color={textColor}
-            textAlign={{ sm: "center", md: "justify" }}
-            lineHeight="9"
+            textAlign={{ sm: "justify", md: "justify" }}
+            lineHeight="10"
           >
-            I am a problem solver at heart, with a strong desire to simplify
-            complex issues and devise elegant solutions. I am also a skilled web
-            developer with a passion for programming, logic and structure. I am
-            passionate about web development, both frontend and backend.
-          </Text>
+           Hey there! I love messing around with <span class="text-blue-300/90">web stuff</span>, always trying to figure out how things tick. Recently jumped into the <span className="text-yellow-200/90">Linux world</span>, messing around with <span className="text-pink-200/90">EndeavorOS</span> and soaking up everything I can. When I'm not nerding out on <span className="text-blue-300/90">tech</span>, you'll probably find me cruising on my <span className="text-red-400/90">bike</span> or getting lost in some <span className="text-blue-300/90">video game</span> world. Let's <span className="text-blue-300/90">build cool things</span> and have fun doing it! 🚀🕹️🚴‍♂️          </Text>
 
-          <HStack mt="8" justifyContent={{ sm: "center", md: "left" }}>
+          <HStack mt="8" justifyContent={{ sm: "left", md: "left" }}>
             <a href="https://github.com/jeromeluciano" target="_blank" rel="noreferrer">
               <AnimatedButton title="Github" LeftIcon={<FaGithub size={16} />}/>
             </a>

@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "category": "frontend"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "category": "frontend"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "category": "frontend"
+    },
+    {
+      "id": 4,
+      "name": "TailwindCSS",
+      "category": "frontend"
+    },
+    {
+      "id": 5,
+      "name": "ReactJS",
+      "category": "frontend"
+    },
+    {
+      "id": 6,
+      "name": "ChakraUI",
+      "category": "frontend"
+    },
+    {
+      "id": 7,
+      "name": "Laravel",
+      "category": "backend"
+    },
+    {
+      "id": 8,
+      "name": "PHP",
+      "category": "backend"
+    },
+    {
+      "id": 9,
+      "name": "NodeJS",
+      "category": "backend"
+    },
+    {
+      "id": 10,
+      "name": "",
+      "category": "backend"
+    }
+  ]
+}
