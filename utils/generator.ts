@@ -7,7 +7,7 @@ import { TbBrandNextjs, TbBrandPlanetscale } from "react-icons/tb";
 
 type iconForArgType = "next" | "js" | "tailwindcss" | "react" | "chakra" | "laravel" | "php" | "mysql" | "firebase" | string
 
-export function generateIconElement(iconFor: iconForArgType) {
+export function generateIconElement(iconFor: iconForArgType, key: string) {
   const techMap = {
     next: [TbBrandNextjs, '#FEFCE8'],
     js: [IoLogoJavascript, '#F4E166'],
@@ -27,7 +27,7 @@ export function generateIconElement(iconFor: iconForArgType) {
 
   const [iconType, iconColor] = techMap[iconFor];
 
-  const element = React.createElement(iconType, { color: iconColor }, null)
+  const element = React.createElement(iconType, { color: iconColor, key}, null)
 
   return element;
 }
