@@ -9,7 +9,7 @@ import { IconType } from "react-icons";
 
 interface SkillItemProps {
   Icon: IconType;
-  delay: number;
+  delay?: number;
   bgColor: string;
   color?: string;
 }
