@@ -46,6 +46,7 @@ export default function ProjectLayout({ children, meta }) {
               <Image
                 src={image}
                 layout="responsive"
+                alt="image"
               />
             )}
           </Box>
