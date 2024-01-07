@@ -6,5 +6,5 @@ interface WritingItemListProps {
 }
 
 export default function WritingItemList({ writings }: WritingItemListProps) {
-  return writings.map(writing => <WritingItem title={writing.title} description={writing.description} date={writing.date} link={writing.link}/>);
+  return writings.map(writing => <WritingItem key={writing.title} title={writing.title} description={writing.description} date={writing.date} link={writing.link}/>);
 }

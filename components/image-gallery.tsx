@@ -25,6 +25,7 @@ export default function ImageGallery({ images }) {
               style={{
                 borderRadius: "15px",
               }}
+              alt="gallery"
             />
           </Box>
         ))}
