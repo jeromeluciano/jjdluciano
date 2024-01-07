@@ -70,10 +70,10 @@ export default function HeroSection() {
 
           <HStack mt="8" justifyContent={{ sm: "left", md: "left" }}>
             <a href="https://github.com/jeromeluciano" target="_blank" rel="noreferrer">
-              <AnimatedButton title="Github" LeftIcon={<FaGithub size={16} />}/>
+              <AnimatedButton title="Github" LeftIcon={FaGithub}/>
             </a>
             <a href="/jjdluciano-resume.pdf" target="_blank" rel="noreferrer">
-              <AnimatedButton title="My Resume" LeftIcon={<FaFileDownload size={16} />} />
+              <AnimatedButton title="My Resume" LeftIcon={FaFileDownload} />
             </a>
           </HStack>
         </Stack>

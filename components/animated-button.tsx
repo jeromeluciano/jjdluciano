@@ -1,4 +1,4 @@
-import { Box, Button, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Icon, useColorModeValue } from "@chakra-ui/react";
 import { motion, MotionStyle, MotionValue, useMotionTemplate, useMotionValue } from "framer-motion";
 import { useEffect, useState, type MouseEvent } from "react";
 import { IconType } from "react-icons";
@@ -45,13 +45,15 @@ function AnimatedButton({ title, handler, RightIcon, LeftIcon }: AnimatedButtonP
         '--y': useMotionTemplate`${mouseY}px`,
       } as WrapperStyle}
   >
-      <button
-        className="group flex items-center space-x-2 rounded-lg relative px-4 py-1 overflow-hidden border bg-gradient-to-b from-neutral-950/90 to-neutral-950/90 transition duration-300 dark:from-neutral-950/90 dark:to-neutral-950/90 md:hover:border-transparent text-sm"
-        onClick={handler}
-      >
-        {LeftIcon ? <span>{LeftIcon}</span>:null}
+    <button
+      className="group flex items-center space-x-2 rounded-lg relative px-4 py-1 overflow-hidden border bg-gradient-to-b from-neutral-950/90 to-neutral-950/90 transition duration-300 dark:from-neutral-950/90 dark:to-neutral-950/90 md:hover:border-transparent text-sm"
+      onClick={handler}
+    >
+      {LeftIcon ?
+        <Icon as={LeftIcon} />:null}
         <span>{title}</span>
-      </button>
+    </button>
+
   </motion.div>)
 }
 
