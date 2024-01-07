@@ -5,7 +5,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiChakraui, SiMysql, SiTailwindcss, SiTrpc } from "react-icons/si";
 import { TbBrandNextjs, TbBrandPlanetscale } from "react-icons/tb";
 
-type iconForArgType = "next" | "js" | "tailwindcss" | "react" | "chakra" | "laravel" | "php" | "mysql" | "firebase"
+type iconForArgType = "next" | "js" | "tailwindcss" | "react" | "chakra" | "laravel" | "php" | "mysql" | "firebase" | string
 
 export function generateIconElement(iconFor: iconForArgType) {
   const techMap = {
