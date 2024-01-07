@@ -23,7 +23,7 @@ export default function ProjectSection() {
     <Section delay={1.5} className="mt-6 mb-8" >
       <Stack spacing={4}>
         <SectionTitle title="🚧 Projects" />
-        <Grid templateColumns="repeat(2, 1fr)" gap={8}>
+        <Grid templateColumns={{ sm: "repeat(1, 1fr)", md:"repeat(2, 1fr)"}} gap={8}>
           <ProjectItem
             thumbnail={cyclickImg}
             githubLink="https://github.com/jeromeluciano/Cyclick"

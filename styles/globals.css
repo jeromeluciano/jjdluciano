@@ -105,9 +105,6 @@ pre {
   margin: 2rem 0;
 }
 
-img {
-  @apply rounded-3xl my-4;
-}
 
 code>[data-line]::before {
   counter-increment: line;

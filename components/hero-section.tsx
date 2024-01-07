@@ -44,7 +44,7 @@ export default function HeroSection() {
 
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
-                textAlign={{ sm: "center", md: "justify" }}
+                textAlign={{ sm: "left", md: "justify" }}
               >
                 I&apos;m{" "}
                 <Text as="span" color={primaryColor} fontWeight="bold">

@@ -2,7 +2,6 @@ import { LinkIcon } from "@chakra-ui/icons";
 import {
     Box,
   Heading,
-  Image,
   Link,
   ListItem,
   OrderedList,
@@ -10,7 +9,6 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import mdx from "mdx/types";
-import NextImage from 'next/image'
 
 export const components: mdx.MDXComponents = {
   h1: (props) => <Heading as="h1" {...props} fontWeight="900" fontSize="xl"/>,

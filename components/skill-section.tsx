@@ -23,7 +23,7 @@ export default function SkillSection() {
         <Flex direction="column">
           <SectionTitle title="⚒️  Languages & Frameworks"/>
           <Flex mt={4}>
-            <Grid templateColumns={{ sm: "repeat(5, 1fr)", md: "repeat(8, 1fr)" }} gap={4} w="full">
+            <Grid templateColumns={{ sm: "repeat(4, 1fr)", md: "repeat(8, 1fr)" }} gap={4} w="full">
               <SkillItem Icon={FaHtml5} bgColor="#F95835"/>
               <SkillItem Icon={FaCss3Alt} bgColor="#4286E0"/>
               <SkillItem Icon={SiTailwindcss} bgColor="#FFFFFF" color="#43ADDA"/>
