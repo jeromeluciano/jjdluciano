@@ -37,7 +37,7 @@ export default function HeroSection() {
         <Stack flex="2" spacing={4} letterSpacing="2" justifyContent="center">
           <Grid templateColumns="100px auto" columnGap={5}>
             <Box>
-              <Image as={NextImage} w="40" h="40" rounded="3xl" src={Me} alt="me" />
+              <Image as={NextImage} w="40" h="40" rounded="3xl" src={`${Me}`} alt="me" />
             </Box>
             <VStack alignItems="start" justifyContent="center">
               
