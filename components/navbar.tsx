@@ -92,6 +92,13 @@ export default function Navbar() {
                         </LinkBox>
                       </MenuItem>
                     </Link>
+                    <Link href="/music">
+                      <MenuItem>
+                        <LinkBox letterSpacing="wider" cursor="pointer">
+                         music 
+                        </LinkBox>
+                      </MenuItem>
+                    </Link>
                     <Link href="/projects">
                       <MenuItem>
                         <LinkBox letterSpacing="wider" cursor="pointer">
