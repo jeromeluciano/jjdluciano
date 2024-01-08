@@ -16,14 +16,14 @@ export default function MusicPage({ recentlyPlayedItems, followedArtistItems }) 
       <Section delay={0.6} className="mb-8">
         <div className="flex flex-col space-y-8">
           <div>
-            <h1 className="font-bold text-yellow-50 mt-4 mb-4">Recently Played Tracks</h1>
+            <h1 className="font-bold text-xl text-yellow-50 mt-4 mb-4">Recently Played Tracks</h1>
 
             <div className="flex flex-col space-y-6">
               {recentlyPlayedItems.map((item, index) => <MusicTrack track={item.track} key={index} />)}
             </div>
           </div>
           <div>
-            <h1 className="font-bold text-yellow-50 mt-4 mb-4">Followed Artists</h1>
+            <h1 className="font-bold text-xl text-yellow-50 mt-4 mb-4">Followed Artists</h1>
 
             <div className="flex flex-col space-y-6">
               {followedArtistItems.map((item, index) => <FollowedArtist item={item} key={index} />)}
