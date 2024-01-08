@@ -47,9 +47,9 @@ export default function Navbar() {
           </Box>
           <Box flex={{ sm: "1", md: 0 }} display={{ sm: "none", md: "flex" }}>
             <LinkBox cursor="pointer">
-              <a href="/jjdluciano-resume.pdf" target="_blank">
-                <Text fontSize="md">projects</Text>
-              </a>
+              <Link href={'/music'}>
+                <Text fontSize="md">music</Text>
+              </Link>
             </LinkBox>
           </Box>
 
