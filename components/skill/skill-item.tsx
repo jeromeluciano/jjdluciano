@@ -12,9 +12,10 @@ interface SkillItemProps {
   delay?: number;
   bgColor: string;
   color?: string;
+  title: string;
 }
 
-export default function SkillItem({ Icon, delay, bgColor, color, ...pageProps }: SkillItemProps) {
+export default function SkillItem({ Icon, delay, bgColor, color, title, ...pageProps }: SkillItemProps) {
   const [mounted, setMounted] = useState(false);
   const textColor = useColorModeValue("yellow.100", "yellow.900")
 
@@ -28,7 +29,7 @@ export default function SkillItem({ Icon, delay, bgColor, color, ...pageProps }:
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.2, delay }}
     >
-      <Flex alignItems="center" justifyContent="center" backgroundColor={bgColor} rounded="20" padding={4}>
+      <Flex alignItems="center" justifyContent="center" backgroundColor={bgColor} rounded="20" padding={4} title={title}>
         {<Icon size={38} color={color ? color : "rgb(254, 252, 232)"} />}
       </Flex>
     </motion.div>

@@ -24,16 +24,16 @@ export default function SkillSection() {
           <SectionTitle title="⚒️  Languages & Frameworks"/>
           <Flex mt={4}>
             <Grid templateColumns={{ sm: "repeat(4, 1fr)", md: "repeat(8, 1fr)" }} gap={4} w="full">
-              <SkillItem Icon={FaHtml5} bgColor="#F95835"/>
-              <SkillItem Icon={FaCss3Alt} bgColor="#4286E0"/>
-              <SkillItem Icon={SiTailwindcss} bgColor="#FFFFFF" color="#43ADDA"/>
-              <SkillItem Icon={IoLogoJavascript} bgColor="#F4E166" color="#111101"/>
-              <SkillItem Icon={FaReact} bgColor="#23272F" color="#149ECA"/>
-              <SkillItem Icon={TbBrandNextjs} bgColor="#23272F"/>
-              <SkillItem Icon={SiChakraui} bgColor="#FFF" color="#44C8C1"/>
-              <SkillItem Icon={FaLaravel} bgColor="#F03E30"/>
-              <SkillItem Icon={FaPhp} bgColor="#7277AD"/>
-              <SkillItem Icon={SiMysql} bgColor="#3E6E93"/>
+              <SkillItem title="Hypertext Markup Language" Icon={FaHtml5} bgColor="#F95835"/>
+              <SkillItem title="CSS3" Icon={FaCss3Alt} bgColor="#4286E0"/>
+              <SkillItem title="TailwindCSS" Icon={SiTailwindcss} bgColor="#FFFFFF" color="#43ADDA"/>
+              <SkillItem title="Javascript" Icon={IoLogoJavascript} bgColor="#F4E166" color="#111101"/>
+              <SkillItem title="ReactJS" Icon={FaReact} bgColor="#23272F" color="#149ECA"/>
+              <SkillItem title="NextJS" Icon={TbBrandNextjs} bgColor="#23272F"/>
+              <SkillItem title="ChakraUI" Icon={SiChakraui} bgColor="#FFF" color="#44C8C1"/>
+              <SkillItem title="Laravel" Icon={FaLaravel} bgColor="#F03E30"/>
+              <SkillItem title="PHP" Icon={FaPhp} bgColor="#7277AD"/>
+              <SkillItem title="MySQL" Icon={SiMysql} bgColor="#3E6E93"/>
             </Grid>
           </Flex>
         </Flex>
