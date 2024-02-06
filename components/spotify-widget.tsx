@@ -11,6 +11,7 @@ import {
   Text,
   useColorModeValue,
   VStack,
+  keyframes
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaSpotify } from "react-icons/fa";
@@ -19,11 +20,17 @@ import useSWR from "swr";
 import { fetcher as currentlyPlayingFetch } from "../fetchers/currently-playing";
 import Image from "next/image";
 
+const spin = keyframes`
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+`;
+
 export default function SpotifyWidget() {
   const iconColor = useColorModeValue("#34D399", "#00DE80");
   const textColor = useColorModeValue("yellow.300", "yellow.50");
   const bgColor = useColorModeValue("blue.50", "rgb(39 39 42)");
   const spotifyIconBnW = useColorModeValue("black", "white");
+  const spinAnimation = `${spin} infinite 2s linear`;
 
   const { data: song, isLoading } = useSWR(
     "/api/currently-playing",
@@ -40,7 +47,9 @@ export default function SpotifyWidget() {
         <Popover placement="top" trigger="hover">
           <PopoverTrigger>
             <Stack direction="row">
-              <FaSpotify color={iconColor} size={18} />
+              <Box animation={spinAnimation}>
+                <FaSpotify color={iconColor} size={18} />
+              </Box>
               <Text color={textColor} fontWeight="semibold" fontSize="xs">
                 <Text className="spotify-link">
                   Listening to Spotify
