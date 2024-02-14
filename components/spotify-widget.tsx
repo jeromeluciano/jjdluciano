@@ -60,7 +60,7 @@ export default function SpotifyWidget() {
           <PopoverContent w="fit-content" px="4" py="3" bg={bgColor} borderRadius="15">
             <VStack alignItems="start" spacing={3}>
               <HStack alignItems="center" justifyContent="space-between" w="full">
-                <Text fontSize="sm">Listening to Spotify</Text>
+                <Text fontSize="sm">Now Playing</Text>
                 <Box>
                   <FaSpotify color={iconColor} size={18} />
                 </Box>
