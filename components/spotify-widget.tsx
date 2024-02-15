@@ -19,6 +19,7 @@ import { getNowPlaying } from "../services/spotify";
 import useSWR from "swr";
 import { fetcher as currentlyPlayingFetch } from "../fetchers/currently-playing";
 import Image from "next/image";
+import FeaturedCard from "./featured-card";
 
 const spin = keyframes`
   from {transform: rotate(0deg);}
@@ -44,20 +45,20 @@ export default function SpotifyWidget() {
   return (
     <HStack alignContent={"center"} justifyContent="center" display={{sm: "none", md: "flex"}}>
       {song.isPlaying ? (
-        <Popover placement="top" trigger="hover">
+        <Popover placement="top" trigger="hover" >
           <PopoverTrigger>
-            <Stack direction="row">
+            <Stack direction="row" bgColor="green.900" _hover={{ backgroundColor: "green.800" }} px={3} py={1.5} rounded={"xl"}>
               <Box animation={spinAnimation}>
                 <FaSpotify color={iconColor} size={18} />
               </Box>
               <Text color={textColor} fontWeight="semibold" fontSize="xs">
-                <Text className="spotify-link">
+                <Text>
                   Listening to Spotify
                 </Text>
               </Text>
             </Stack>
           </PopoverTrigger>
-          <PopoverContent w="fit-content" px="4" py="3" bg={bgColor} borderRadius="15">
+          <PopoverContent w="fit-content" px="4" py="3" bg={"green.900"} borderRadius="15">
             <VStack alignItems="start" spacing={3}>
               <HStack alignItems="center" justifyContent="space-between" w="full">
                 <Text fontSize="sm">Now Playing</Text>
@@ -87,5 +88,6 @@ export default function SpotifyWidget() {
         </Text>
       )}
     </HStack>
+
   );
 }

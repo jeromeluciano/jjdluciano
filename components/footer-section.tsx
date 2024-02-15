@@ -7,6 +7,7 @@ import useTextColor from "../hooks/useTextColor";
 import Section from "./section";
 import SpotifyWidget from "./spotify-widget";
 import SpotifyWidgetLink from "./spotify-widget-link";
+import FeaturedCard from "./featured-card";
 
 export default function FooterSection() {
   const textColor = useTextColor();
@@ -18,15 +19,16 @@ export default function FooterSection() {
 
   return (
     <Section delay={1.9} as="footer" className="footer">
-      <Stack spacing={4} py={4} marginTop="auto">
+      <Stack spacing={4} py={4} pb={8} marginTop="auto">
         <Container maxW="container.md" px={4}> 
-            
+
           <HStack direction="column" justifyContent="space-between" px={4} >
+            <SpotifyWidget />
+
             <Text textAlign="center" color={textColor} fontSize="xs">
               &copy; {new Date().getFullYear()} John Jerome D. Luciano
             </Text>
 
-            <SpotifyWidget />
 
             <Stack
               direction="row"
