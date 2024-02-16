@@ -37,13 +37,13 @@ export default function HeroSection() {
         justifyContent="space-between"
         gridGap="8"
       >
-        <Stack flex="2" spacing={8} letterSpacing="2" justifyContent="center">
-          <Grid templateColumns="150px auto" columnGap={12}>
+        <Stack flex="2" spacing={6} letterSpacing="2" justifyContent="center">
+          <Grid templateColumns="150px auto" columnGap={10}>
             <Box>
               {/* @ts-ignore */}
               <Image as={NextImage} w={120} h={120} rounded="full" src={Me3} alt="me" />
             </Box>
-            <VStack alignItems="start" justifyContent="center">
+            <VStack spacing={3} alignItems="start" justifyContent="center">
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
                 textAlign={{ sm: "left", md: "justify" }}
