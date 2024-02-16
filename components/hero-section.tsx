@@ -1,4 +1,5 @@
 import {
+  AspectRatio,
   Box,
   Button,
   Fade,
@@ -19,6 +20,8 @@ import useTextColor from "../hooks/useTextColor";
 import Section from "./section";
 import { FaFile, FaFileDownload, FaGithub } from "react-icons/fa";
 import Me from '../public/images/me2.jpg'
+import Me2 from '../public/images/jerome2.png'
+import Me3 from '../public/images/jeromesky3.jpg'
 import AnimatedButton from "./animated-button";
 
 export default function HeroSection() {
@@ -34,14 +37,13 @@ export default function HeroSection() {
         justifyContent="space-between"
         gridGap="8"
       >
-        <Stack flex="2" spacing={4} letterSpacing="2" justifyContent="center">
-          <Grid templateColumns="100px auto" columnGap={5}>
+        <Stack flex="2" spacing={8} letterSpacing="2" justifyContent="center">
+          <Grid templateColumns="150px auto" columnGap={12}>
             <Box>
               {/* @ts-ignore */}
-              <Image as={NextImage} w="40" h="40" rounded="3xl" src={Me} alt="me" />
+              <Image as={NextImage} w={120} h={120} rounded="full" src={Me3} alt="me" />
             </Box>
             <VStack alignItems="start" justifyContent="center">
-
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
                 textAlign={{ sm: "left", md: "justify" }}
