@@ -6,7 +6,7 @@ import {
   Flex,
   Grid,
   HStack,
-  Image,
+  Image, keyframes,
   LinkBox,
   Stack,
   Text,
@@ -24,9 +24,36 @@ import Me2 from '../public/images/jerome2.png'
 import Me3 from '../public/images/jeromesky3.jpg'
 import AnimatedButton from "./animated-button";
 
+const wavy = keyframes`
+  0% {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 60px;
+  }
+  20% { 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 100px;
+  }
+  40% {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 80px;
+  }
+  60% {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 60px;
+  }
+  80% {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 40px;
+  }
+  100% {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 60px;
+  }
+`;
 export default function HeroSection() {
   const primaryColor = usePrimaryColor();
   const textColor = useTextColor();
+  const wavyAnimation = `${wavy} infinite 8s ease-in-out`;
 
   return (
     <Section delay={0.6} className="mt-8">
@@ -37,19 +64,20 @@ export default function HeroSection() {
         justifyContent="space-between"
         gridGap="8"
       >
-        <Stack flex="2" spacing={6} letterSpacing="2" justifyContent="center">
-          <Grid templateColumns="150px auto" columnGap={10}>
-            <Box>
+        <Stack flex="2" spacing={{sm: 4, md: 8}} letterSpacing="2" justifyContent="center">
+          <Grid justifyContent={{ sm: "center", md: "start" }} templateColumns={{ sm: "auto", md: "150px auto" }} columnGap={8} rowGap={7}>
+            <Flex justifyContent="center" alignItems="center" maxW={60}>
               {/* @ts-ignore */}
-              <Image as={NextImage} w={120} h={120} rounded="full" src={Me3} alt="me" />
-            </Box>
-            <VStack spacing={3} alignItems="start" justifyContent="center">
+              <Image as={NextImage} w={70} h={70} animation={wavyAnimation} className=" rounded-bl-[110px] rounded-br-[110px]" src={Me3} alt="me" />
+
+            </Flex>
+            <VStack spacing={2} alignItems={{ sm: "center", md: "start" }} justifyContent="center">
               <Text
                 fontSize={{ sm: "xl", md: "xl" }}
                 textAlign={{ sm: "left", md: "justify" }}
               >
                 I&apos;m{" "}
-                <Text as="span" color={primaryColor} fontWeight="bold">
+                <Text textAlign="center" as="span" color={primaryColor} fontWeight="bold">
                   John Jerome D. Luciano
                 </Text>
               </Text>
@@ -63,6 +91,7 @@ export default function HeroSection() {
               </Text>
             </VStack>
           </Grid>
+
           <Text
             fontSize={{ sm: "lg", md: "lg" }}
             color={textColor}
