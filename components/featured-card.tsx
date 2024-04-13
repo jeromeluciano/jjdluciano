@@ -38,7 +38,7 @@ export default function FeaturedCard({ children }) {
         } as WrapperStyle
       }
     >
-      <Box className="group relative w-full overflow-hidden rounded-3xl border bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-950/90 dark:to-neutral-900/90 md:hover:border-transparent">
+      <Box className="group relative w-full overflow-hidden rounded-3xl border bg-gradient-to-b transition duration-300 from-neutral-950/90 to-neutral-900/90 md:hover:border-transparent">
         {mounted ? children : null}
       </Box>
     </motion.div>
