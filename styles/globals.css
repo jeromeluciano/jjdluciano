@@ -127,3 +127,11 @@ code[data-line-numbers-max-digits='2']>[data-line]::before {
 code[data-line-numbers-max-digits='3']>[data-line]::before {
   width: 3rem;
 }
+/* 
+#hero-profile-img {
+  mask:
+    radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+    radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-51% 0,45% 101%, 120% 10%);
+} */
